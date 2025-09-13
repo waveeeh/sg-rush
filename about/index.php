@@ -243,10 +243,9 @@
     </section>
 
     <!-- Tabs Section -->
-    <div 
-        x-data="{ selectedTab: 'The Mace', tabItems: ['The Mace', 'The Secretary', 'The Sergeant of Arms', 'The Session Hall'] }"
-        >
-        <div class="max-w-screen-xl mt-2 mx-auto px-4 md:px-8">
+<!-- idk how to design-->
+    <div x-data="{ selectedTab: 'The Mace', tabItems: ['The Mace', 'The Secretary', 'The Sergeant of Arms', 'The Session Hall'] }">
+        <div class="w-full mt-2 px-4 md:px-8 bg-white rounded-lg shadow-md">
             <div
             class="hidden gap-x-3 py-1 overflow-x-auto px-px text-sm sm:flex"
             aria-label="Manage your account"
@@ -283,7 +282,7 @@
             </select>
             </div>
             <template x-for="(item, index) in tabItems" :key="index">
-                <div x-show="selectedTab === item" class="py-6">
+                <div x-show="selectedTab === item" class="py-6 ">
                     <!-- THE MACE CONTENT -->
                     <template x-if="item === 'The Mace'">
                         <div class="flex flex-col md:flex-row gap-8 items-center">
