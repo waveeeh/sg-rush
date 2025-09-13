@@ -13,7 +13,7 @@
 <body class="bg-gray-100">
 
     <!-- Header -->
-    <header class="text-gray-600 body-font">
+    <header class="sticky top-0 z-50 bg-white shadow-md text-gray-600 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
@@ -54,6 +54,14 @@
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/515013107_122158188332537199_3912422767005767001_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=U7zxWVSUjhkQ7kNvwEeEd9e&_nc_oc=Adlug8uBlZTeUYnoRWMh_IZxAN2xw3gjwf1dAVH1Rojbmt-Bc0Htp2rGbFgIur9FXmo&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=IxP5NpPJT1G50auuqt5M7Q&oh=00_Afald1QE3i1nSOtci-xS1W06Od4J_hsg73ebUTZrXfT0Og&oe=68C9F038" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/515013107_122158188332537199_3912422767005767001_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=U7zxWVSUjhkQ7kNvwEeEd9e&_nc_oc=Adlug8uBlZTeUYnoRWMh_IZxAN2xw3gjwf1dAVH1Rojbmt-Bc0Htp2rGbFgIur9FXmo&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=IxP5NpPJT1G50auuqt5M7Q&oh=00_Afald1QE3i1nSOtci-xS1W06Od4J_hsg73ebUTZrXfT0Og&oe=68C9F038" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/515013107_122158188332537199_3912422767005767001_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=U7zxWVSUjhkQ7kNvwEeEd9e&_nc_oc=Adlug8uBlZTeUYnoRWMh_IZxAN2xw3gjwf1dAVH1Rojbmt-Bc0Htp2rGbFgIur9FXmo&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=IxP5NpPJT1G50auuqt5M7Q&oh=00_Afald1QE3i1nSOtci-xS1W06Od4J_hsg73ebUTZrXfT0Og&oe=68C9F038" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
         </div>
         <!-- Slider indicators -->
         <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
@@ -84,7 +92,7 @@
 
 
     <!-- Hero Section-->
-    <div
+    <!-- <div
     x-data="{
     isVideoPoppedUp: false,
     closeVideo() {
@@ -97,7 +105,7 @@
     }
     }"
     >
-    <section>
+    <section class="bg-[#ECF9FF]">
         <div
         class="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8 xl:flex"
         >
@@ -208,11 +216,24 @@
         </div>
         </div>
     </section>
+    </div> -->
+
+    <!--Hero Section 2-->
+    <div class="relative z-10 max-w-screen-xl mx-auto px-4 py-16 md:px-8 bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://cdn.fastpixel.io/fp/ret_img+v_5b0f+w_794+h_447+q_glossy+to_webp/nebmci.org/wp-content/uploads/2021/05/bongabon-3.png');">
+        <div class="space-y-5 max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl text-gray-800 font-extrabold mx-auto md:text-5xl">
+                SANGGUNIANG PANLUNGSOD NG BONGABON    
+            </h2>
+            <p class="max-w-2xl mx-auto text-gray-600">
+                Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+            </p>
+        </div>           
     </div>
 
     <!-- Section Nav -->
-    <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-        <ul class="flex flex-wrap justify-center -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-active-classes="text-blue-600 hover:text-blue-600 dark:text-blue-500 dark:hover:text-blue-500 border-blue-600 dark:border-blue-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-blue-600 dark:text-gray-400 border-gray-100 hover:border-blue-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
+    <div class="mb-4 border-b border-gray-200 bg-[#FBFBFB] dark:border-gray-700">
+        <ul class="flex flex-wrap justify-center -mb-px text-base font-medium text-center" id="default-styled-tab" data-tabs-active-classes="text-blue-600 hover:text-blue-600 dark:text-blue-500 dark:hover:text-blue-500 border-blue-600 dark:border-blue-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-blue-600 dark:text-gray-400 border-gray-100 hover:border-blue-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
             <li class="me-2 relative group" role="presentation">
                 <a href="/standing-committees" class="inline-block p-4 border-b-2 rounded-t-lg hover:text-blue-600 hover:border-blue-300">Standing Committees</a>
                 <!-- Dropdown menu -->
@@ -266,38 +287,38 @@
 
 
     <!-- Blog Section -->
-    <div class="max-w-6xl mx-auto p-6">
-        <div class="flex flex-col md:flex-row gap-8">
-            <!-- Left side - Image section -->
-            <div class="md:w-2/5">
-            <img src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" 
-                alt="Content image" 
-                class="w-full h-64 object-cover rounded-lg">
-            </div>
-            
-            <!-- Right side - Content section -->
-            <div class="md:w-3/5">
-            <h2 class="text-2xl font-bold text-gray-800 mb-2">Content Title Goes Here</h2>
-            <h3 class="text-lg text-gray-600 mb-4">This is a descriptive subtitle</h3>
-            <p class="text-gray-700 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </p>
-            <p class="text-gray-700">
-                Additional content goes here. Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
+    <div class="bg-[#F2F9FF] py-8">
+        <div class="max-w-6xl mx-auto p-6">
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Left side - Image section -->
+                <div class="md:w-2/5">
+                <img src="https://cdn.sanity.io/images/anl9abaw/production/0badf9aa9b89b64565154a17758d43baca982d97-1920x1280.png?w=3840&q=75&fit=clip&auto=format" 
+                    alt="Content image" 
+                    class="w-full h-64 object-cover rounded-lg">
+                </div>
+                
+                <!-- Right side - Content section -->
+                <div class="md:w-3/5">
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">The City's Law-making Body</h2>
+                <p class="text-gray-700 mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+                <p class="text-gray-700">
+                    Additional content goes here. Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="max-w-6xl mx-auto p-6">
-        <h2 class="text-2xl font-bold text-gray-800 mb-2">Content Title Goes Here</h2>
-        <h3 class="text-lg text-gray-600 mb-4">This is a descriptive subtitle</h3>
-            <p class="text-gray-700 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </p>
-            <p class="text-gray-700">
-                Additional content goes here. Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
+        <div class="max-w-6xl mx-auto p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">The Mace: Emblem of Authority and Order</h2>
+                <p class="text-gray-700 mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+                <p class="text-gray-700">
+                    Additional content goes here. Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+        </div>
     </div>
 
     <!-- Sg Members Section -->
@@ -305,7 +326,7 @@
         <!-- Image Section (80% width, centered) -->
         <div class="flex justify-center mb-6">
             <div class="w-full md:w-4/5">
-            <img src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+            <img src="https://georgiatoday.ge/wp-content/uploads/2022/11/1.jpg" 
                 alt="Content image" 
                 class="w-full h-96 object-cover rounded-lg mx-auto">
             </div>
@@ -313,7 +334,7 @@
         
         <!-- Title and Subtitle (centered) -->
         <div class="text-center mb-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-2">Blog Title Goes Here</h2>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">Members of the 15th Sanggunian</h2>
             <h3 class="text-lg text-gray-600">This is a compelling subtitle that summarizes the content</h3>
         </div>
         
@@ -329,7 +350,7 @@
     </div>
 
     <!--Contact Section-->
-    <main class="py-14 bg-white" x-data="contactComponent()">
+    <main class="py-8 bg-white" x-data="contactComponent()">
         <div class="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
             <div class="max-w-xl space-y-3">
                 <h3 class="text-indigo-600 font-semibold">
@@ -402,7 +423,7 @@
 
     <!-- Footer -->
     <footer class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
             <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
