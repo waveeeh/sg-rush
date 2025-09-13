@@ -21,8 +21,8 @@
             <span class="ml-3 text-xl">Tailblocks</span>
             </a>
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a href="landing.php" class="mr-5 hover:text-blue-900">SP Home</a>
-            <a href="about/index.php" class="mr-5 hover:text-blue-900">About the Sanggunian</a>
+            <a href="../landing.php" class="mr-5 hover:text-blue-900">SP Home</a>
+            <a href="index.php" class="mr-5 text-blue-900 hover:text-blue-700">About the Sanggunian</a>
             <a href="#" class="mr-5 hover:text-blue-900">Proposed Ordinance</a>
             </nav>
             <div class="flex items-center bg-gray-100 border border-gray-300 py-1 px-3 focus-within:bg-gray-200 rounded text-base mt-4 md:mt-0">
@@ -36,58 +36,6 @@
             </div>
         </div>
     </header>
-
-    <!-- Carousel Section -->
-    <div id="default-carousel" class="relative w-full" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-            <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://scontent.fmnl17-7.fna.fbcdn.net/v/t39.30808-6/514098782_122158060088537199_2280862184484719632_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3ucOXzb5QIgQ7kNvwEMjFWu&_nc_oc=Adnue-PAhymLLEMuus3CXb5KUZ53xo1RVplvIwuBvgE75ohxasAbGTXxzdE3_-9hmK0&_nc_zt=23&_nc_ht=scontent.fmnl17-7.fna&_nc_gid=C9czznGhjPvqoWPcYw1dtQ&oh=00_AfanKMqpTobvvu2i3tpUI2Y1Hyo9voCjPhXFzxZ---b1zg&oe=68C9E297" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/514002762_122158059980537199_4565664459683296491_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=lPlIB4C9KQcQ7kNvwH9B3ca&_nc_oc=Adkkwr46rZ-eTp95T1RtPYZDexbyVe5yrrbd-G5Pn940hlRUHJkilgmI-A6c2vkniqY&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=WF4uhixccABe5pmGZzHfyA&oh=00_AfaHWTVJQ8_yWIdcNQC1guqQd62_ty9ug6WQ6BInHdI3Qw&oe=68C9EF6B" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/515013107_122158188332537199_3912422767005767001_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=U7zxWVSUjhkQ7kNvwEeEd9e&_nc_oc=Adlug8uBlZTeUYnoRWMh_IZxAN2xw3gjwf1dAVH1Rojbmt-Bc0Htp2rGbFgIur9FXmo&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=IxP5NpPJT1G50auuqt5M7Q&oh=00_Afald1QE3i1nSOtci-xS1W06Od4J_hsg73ebUTZrXfT0Og&oe=68C9F038" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-            <!-- Item 4 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/515013107_122158188332537199_3912422767005767001_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=U7zxWVSUjhkQ7kNvwEeEd9e&_nc_oc=Adlug8uBlZTeUYnoRWMh_IZxAN2xw3gjwf1dAVH1Rojbmt-Bc0Htp2rGbFgIur9FXmo&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=IxP5NpPJT1G50auuqt5M7Q&oh=00_Afald1QE3i1nSOtci-xS1W06Od4J_hsg73ebUTZrXfT0Og&oe=68C9F038" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-            <!-- Item 5 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/515013107_122158188332537199_3912422767005767001_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=U7zxWVSUjhkQ7kNvwEeEd9e&_nc_oc=Adlug8uBlZTeUYnoRWMh_IZxAN2xw3gjwf1dAVH1Rojbmt-Bc0Htp2rGbFgIur9FXmo&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=IxP5NpPJT1G50auuqt5M7Q&oh=00_Afald1QE3i1nSOtci-xS1W06Od4J_hsg73ebUTZrXfT0Og&oe=68C9F038" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-        </div>
-        <!-- Slider indicators -->
-        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-        </div>
-        <!-- Slider controls -->
-        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                </svg>
-                <span class="sr-only">Previous</span>
-            </span>
-        </button>
-        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                </svg>
-                <span class="sr-only">Next</span>
-            </span>
-        </button>
-    </div>
 
 
     <!-- Hero Section-->
@@ -224,10 +172,6 @@
                 <h2 class="text-4xl text-gray-800 font-extrabold mx-auto md:text-5xl">
                     SANGGUNIANG PANLUNGSOD NG BONGABON    
                 </h2>
-                <p class="max-w-2xl mx-auto text-gray-600">
-                    Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
-                    doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-                </p>
             </div>
         </div>           
     </div>
@@ -284,71 +228,179 @@
     </div>
 
 
-
-
-
-    <!-- Blog Section -->
-    <div class="bg-[#F2F9FF] py-8">
-        <div class="max-w-6xl mx-auto p-6">
-            <div class="flex flex-col md:flex-row gap-8">
-                <!-- Left side - Image section -->
-                <div class="md:w-2/5">
-                <img src="https://cdn.sanity.io/images/anl9abaw/production/0badf9aa9b89b64565154a17758d43baca982d97-1920x1280.png?w=3840&q=75&fit=clip&auto=format" 
-                    alt="Content image" 
-                    class="w-full h-64 object-cover rounded-lg">
-                </div>
-                
-                <!-- Right side - Content section -->
-                <div class="md:w-3/5">
-                <h2 class="text-2xl font-bold text-gray-800 mb-2">The City's Law-making Body</h2>
-                <p class="text-gray-700 mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    <!--card section-->
+    <section class="text-gray-600 bg-[#F7F7F7] body-font">
+        <div class="container px-5 py-12 mx-auto">
+            <div class="lg:w-2/3 flex flex-col items-center text-center mx-auto">
+                <h1 class="text-base font-medium title-font text-gray-900 mb-6">
+                    The Sangguniang Panlungsod ng Lungsod ng Naga (The Naga City Council), is the city’s law-making body. Sanggunian is a Tagalog word which translates as “council” – from the rootword “sangguni” (“to consult”). Lungsod translates to “city”.
+                </h1>
+                <p class="text-sm text-gray-700">
+                    The <a href=" " class="text-blue-600 hover:text-blue-800 hover:underline">Local Government Code of 1991</a> governs the composition, powers and functions of the Sangguniang Panlungsod. 
                 </p>
-                <p class="text-gray-700">
-                    Additional content goes here. Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </p>
-                </div>
             </div>
         </div>
+    </section>
 
-        <div class="max-w-6xl mx-auto p-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-2">The Mace: Emblem of Authority and Order</h2>
-                <p class="text-gray-700 mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                </p>
-                <p class="text-gray-700">
-                    Additional content goes here. Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </p>
+    <!-- Tabs Section -->
+    <div 
+        x-data="{ selectedTab: 'The Mace', tabItems: ['The Mace', 'The Secretary', 'The Sergeant of Arms', 'The Session Hall'] }"
+        >
+        <div class="max-w-screen-xl mt-2 mx-auto px-4 md:px-8">
+            <div
+            class="hidden gap-x-3 py-1 overflow-x-auto px-px text-sm sm:flex"
+            aria-label="Manage your account"
+            >
+            <template x-for="(item, index) in tabItems" :key="index">
+                <button
+                @click="selectedTab = item"
+                :class="{'bg-blue-100 text-blue-700 shadow-sm': selectedTab === item, 'text-black-500 hover:text-blue-700 hover:bg-blue-100 active:bg-gray-100': selectedTab !== item}"
+                class="outline-blue-800 py-1.5 px-3 rounded-lg duration-150 font-medium"
+                x-text="item"
+                ></button>
+            </template>
+            </div>
+            <div class="relative text-gray-500 sm:hidden">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="pointer-events-none w-5 h-5 absolute right-2 inset-y-0 my-auto"
+            >
+                <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd"
+                />
+            </svg>
+            <select
+                x-model="selectedTab"
+                class="py-2 px-3 w-full bg-transparent appearance-none outline-none border rounded-lg shadow-sm focus:border-gray-800 text-sm"
+            >
+                <template x-for="(item, index) in tabItems" :key="index">
+                <option :value="item" x-text="item"></option>
+                </template>
+            </select>
+            </div>
+            <template x-for="(item, index) in tabItems" :key="index">
+                <div x-show="selectedTab === item" class="py-6">
+                    <!-- THE MACE CONTENT -->
+                    <template x-if="item === 'The Mace'">
+                        <div class="flex flex-col md:flex-row gap-8 items-center">
+                            <!-- Image Section -->
+                            <div class="md:w-2/5">
+                                <img src="https://images.unsplash.com/photo-1577720643272-265f0936742f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                                    alt="Content image" 
+                                    class="w-full h-64 object-cover rounded-lg shadow-md">
+                            </div>
+                            <!-- Text Content Section -->
+                            <div class="md:w-3/5">
+                                <h2 class="text-2xl font-bold text-gray-800 mb-4">About Sanggunian Panlungsod</h2>
+                                <p class="text-base text-gray-600 mb-4">
+                                    The Sangguniang Panlungsod serves as the legislative body of the city, responsible for 
+                                    creating ordinances and resolutions that benefit the community and ensure good governance.
+                                </p>
+                                <p class="text-base text-gray-600">
+                                    Composed of elected and ex-officio members, the Sanggunian works collaboratively to 
+                                    address the needs of constituents and promote sustainable development throughout the city.
+                                </p>
+                            </div>
+                        </div>
+                    </template>
+                    
+                    <!-- THE SECRETARY CONTENT -->
+                    <template x-if="item === 'The Secretary'">
+                            <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+                                <!-- Image Section (on right for desktop) -->
+                                <div class="md:w-2/5">
+                                    <img src="https://images.unsplash.com/photo-1577720643272-265f0936742f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                                        alt="Content image" 
+                                        class="w-full h-64 object-cover rounded-lg shadow-md">
+                                </div>
+                                
+                                <!-- Text Content Section -->
+                                <div class="md:w-3/5">
+                                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Legislative Processes</h2>
+                                    <p class="text-xl text-gray-600 mb-4">
+                                        The Sanggunian follows a structured legislative process to ensure that all ordinances 
+                                        and resolutions are thoroughly discussed and properly enacted for the welfare of the city.
+                                    </p>
+                                    <p class="text-xl text-gray-600">
+                                        Regular sessions are held to deliberate on important matters, with committees 
+                                        dedicated to specific areas of governance and public service.
+                                    </p>
+                                </div>
+                            </div>
+                    </template>
+
+                    <!-- THE SERGEANT AT ARMS CONTENT -->
+                    <template x-if="item === 'The Sergeant of Arms'">
+                    <div>
+                        <h2>The Sergeant at Arms</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus in ipsum unde tenetur numquam atque magnam! Esse velit minus autem eum. Optio, eius debitis ab architecto deleniti vitae. Sequi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque quos soluta laboriosam perferendis aspernatur? Quis cum deserunt, magnam, quas laboriosam asperiores voluptatibus quibusdam dolores libero consectetur possimus enim, nulla mollitia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci error atque porro nam pariatur optio et neque quasi repellat placeat eligendi, autem maxime unde consectetur accusantium. Laudantium maiores minima autem.</p>
+                    </div>
+                    </template>
+
+                    <!-- THE SESSION HALL CONTENT -->
+                    <template x-if="item === 'The Session Hall'">
+                    <div>
+                        <h2>The Session Hall</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus in ipsum unde tenetur numquam atque magnam! Esse velit minus autem eum. Optio, eius debitis ab architecto deleniti vitae. Sequi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque quos soluta laboriosam perferendis aspernatur? Quis cum deserunt, magnam, quas laboriosam asperiores voluptatibus quibusdam dolores libero consectetur possimus enim, nulla mollitia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci error atque porro nam pariatur optio et neque quasi repellat placeat eligendi, autem maxime unde consectetur accusantium. Laudantium maiores minima autem.</p>
+                    </div>
+                    </template>
+
+                </div>
+            </div>
+        </template>
+    </div>
+
+    <!-- Resolution Section -->
+    <section class="text-gray-600 body-font bg-[#F2F9FF]">
+        <div class="container px-5 py-8 mx-auto">
+            <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg> -->
+            <p class="leading-relaxed text-base">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking vinegar.</p>
+            <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
+            <p class="text-gray-500">Resolution Section</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Large Image Section -->
+
+    <div class="w-full my-12">
+        <!-- Large Heading -->
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">
+            SANGUNIANG PANLUNGSOD NG BONGABON
+        </h2>
+        
+        <!-- Extra Big Image -->
+        <div class="w-full">
+            <img src="https://www.fcnl.org/sites/default/files/2021-02/FCNL-Legislative-Process-2020.png" 
+                alt="Sanggunian Session Hall" 
+                class="w-full h-[900px] object-cover rounded-lg shadow-xl">
         </div>
     </div>
 
-    <!-- Sg Members Section -->
-    <div class="max-w-8xl mx-auto p-6">
-        <!-- Image Section (80% width, centered) -->
-        <div class="flex justify-center mb-6">
-            <div class="w-full md:w-4/5">
-            <img src="https://georgiatoday.ge/wp-content/uploads/2022/11/1.jpg" 
-                alt="Content image" 
-                class="w-full h-96 object-cover rounded-lg mx-auto">
+    <!-- Publications Section -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-12 mx-auto">
+            <div class="lg:w-2/3 flex flex-col items-center text-center mx-auto">
+                <h1 class="text-2xl font-bold title-font text-gray-900 mb-6">
+                    Publications
+                </h1>
+                <p class="text-base text-gray-700">
+                    Local Government Code of 1991</a> governs the composition, powers and functions of the Sangguniang Panlungsod. 
+                </p>
             </div>
         </div>
-        
-        <!-- Title and Subtitle (centered) -->
-        <div class="text-center mb-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-2">Members of the 15th Sanggunian</h2>
-            <h3 class="text-lg text-gray-600">This is a compelling subtitle that summarizes the content</h3>
-        </div>
-        
-        <!-- Content below (centered, 80% width) -->
-        <div class="mx-auto w-full md:w-4/5">
-            <p class="text-gray-700 mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </p>
-            <p class="text-gray-700">
-            Additional content goes here. Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-        </div>
-    </div>
+    </section>
+
+    
+
 
     <!--Contact Section-->
     <main class="py-8 bg-white" x-data="contactComponent()">
