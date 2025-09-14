@@ -188,12 +188,6 @@
         </ul>
     </div>
 
-
-
-
-
-
-
     <!-- Blog Section -->
     <div class="bg-[#F2F9FF] py-8">
         <div class="max-w-6xl mx-auto p-6">

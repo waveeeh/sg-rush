@@ -73,6 +73,9 @@
         </div>           
     </div>
 
+    
+
+
     <!-- Section Nav -->
     <div class="border-b border-gray-200 bg-white dark:border-gray-700">
         <ul class="flex justify-center text-base font-medium text-center space-x-6 text-gray-600" id="default-tab" role="tablist">
@@ -133,10 +136,48 @@
         </ul>
     </div>
 
+    <!-- Council Members Section -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-12 mx-auto">
+            <div class="flex flex-col text-center w-full mb-8">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">City Council Members</h1>
+                <div class="h-1 w-20 bg-primary mx-auto mb-2"></div>
+            </div>
+            <div class="flex flex-wrap -m-2">
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <a href="../about/15thSP.php" 
+                    class="block h-full flex items-center border-gray-200 border p-3 rounded-lg text-center transition-colors duration-300 
+                            bg-white text-gray-600 hover:bg-primary hover:text-white font-medium">
+                        <div class="flex-grow">
+                            <h2 class="title-font text-lg">15th SP</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <a href="../about/14thSP.php" 
+                    class="block h-full flex items-center border-gray-200 border p-4 rounded-lg text-center transition-colors duration-300 
+                            bg-white text-gray-600 hover:bg-primary hover:text-white font-medium">
+                        <div class="flex-grow">
+                            <h2 class="title-font text-lg">14th SP</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <a href="../about/13thSP.php" 
+                    class="block h-full flex items-center border-gray-200 border p-4 rounded-lg text-center transition-colors duration-300 
+                            bg-white text-gray-600 hover:bg-primary hover:text-white font-medium">
+                        <div class="flex-grow">
+                            <h2 class="title-font text-lg">13th SP</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Tabs Section -->
-    <section class="py-16 bg-light" x-data="{ selectedTab: 'The Mace' }">
+    <section class="py-16 bg-[#D9EAFD]" x-data="{ selectedTab: 'The Mace' }">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
 
@@ -239,7 +280,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
