@@ -7,31 +7,55 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#f59e0b',
+                        dark: '#1f2937',
+                        light: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
 
 </head>
 <body class="bg-gray-100">
 
     <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white shadow-md text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a href="landing.php" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span class="ml-3 text-xl">Tailblocks</span>
-            </a>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a href="landing.php" class="mr-5 hover:text-blue-900">SP Home</a>
-            <a href="about/index.php" class="mr-5 hover:text-blue-900">About the Sanggunian</a>
-            <a href="#" class="mr-5 hover:text-blue-900">Proposed Ordinance</a>
-            </nav>
-            <div class="flex items-center bg-gray-100 border border-gray-300 py-1 px-3 focus-within:bg-gray-200 rounded text-base mt-4 md:mt-0">
-                <input type="text" placeholder="Search..." class="bg-transparent border-none focus:outline-none focus:ring-0 w-full">
-                <button type="submit" class="p-1">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <path d="M21 21l-4.35-4.35"></path>
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="landing.php" class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
+                </div>
+                <span class="text-xl font-bold text-dark">SP Bongabon</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="landing.php" class="text-primary font-medium">SP Home</a>
+                <a href="about/index.php" class="text-gray-600 hover:text-primary transition-colors">About the Sanggunian</a>
+                <a href="../sg/proposed/index.php" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinance</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <div class="hidden md:flex items-center bg-gray-100 rounded-full px-3 py-1.5">
+                    <input type="text" placeholder="Search..." class="bg-transparent border-none focus:outline-none focus:ring-0 w-36 lg:w-44">
+                    <button type="submit" class="text-gray-500 hover:text-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
         </div>
@@ -89,134 +113,6 @@
         </button>
     </div>
 
-
-    <!-- Hero Section-->
-    <!-- <div
-    x-data="{
-    isVideoPoppedUp: false,
-    closeVideo() {
-        $refs.video.pause();
-        this.isVideoPoppedUp = false;
-    },
-    openVideo() {
-        this.isVideoPoppedUp = true;
-        $refs.video.play();
-    }
-    }"
-    >
-    <section class="bg-[#ECF9FF]">
-        <div
-        class="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8 xl:flex"
-        >
-        <div class="space-y-5 max-w-2xl mx-auto text-center xl:text-left">
-            <div
-            class="flex flex-wrap items-center justify-center gap-6 xl:justify-start"
-            >
-            <div class="flex items-center gap-x-2 text-gray-500 text-sm">
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="w-5 h-5"
-                >
-                <path
-                    fill-rule="evenodd"
-                    d="M16.403 12.652a3 3 0 000-5.304 3 3 0 00-3.75-3.751 3 3 0 00-5.305 0 3 3 0 00-3.751 3.75 3 3 0 000 5.305 3 3 0 003.75 3.751 3 3 0 005.305 0 3 3 0 003.751-3.75zm-2.546-4.46a.75.75 0 00-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clip-rule="evenodd"
-                ></path>
-                </svg>
-                Trusted
-            </div>
-            <div class="flex items-center gap-x-2 text-gray-500 text-sm">
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="w-5 h-5"
-                >
-                <path
-                    fill-rule="evenodd"
-                    d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                    clip-rule="evenodd"
-                ></path>
-                </svg>
-                400 ratings
-            </div>
-            </div>
-            <h1
-            class="text-4xl text-gray-800 font-extrabold mx-auto md:text-5xl"
-            >
-            SANGGUNIANG PANLUNGSOD NG BONGABON
-            </h1>
-            <p class="max-w-xl mx-auto xl:mx-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A dicta animi ipsam ducimus adipisci ex explicabo perferendis quia, quibusdam ipsum, exercitationem necessitatibus expedita, quasi minus deserunt possimus numquam rem odio.
-            </p>
-            <div
-            class="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0 xl:justify-start"
-            >
-            </div>
-        </div>
-
-        <div class="flex-1 max-w-xl mx-auto mt-14 xl:mt-0">
-            <div class="relative">
-            <img
-                src="https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                class="rounded-lg"
-                alt=""
-            />
-            <button
-                class="absolute w-16 h-16 rounded-full inset-0 m-auto duration-150 bg-blue-500 hover:bg-blue-600 ring-offset-2 focus:ring text-white"
-                x-on:click="openVideo()"
-            >
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="w-6 h-6 m-auto"
-                >
-                <path
-                    d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"
-                />
-                </svg>
-            </button>
-            </div>
-        </div>
-        </div>
-        <div
-        x-bind:class="{ 'flex': isVideoPoppedUp, 'hidden': !isVideoPoppedUp }"
-        class="fixed inset-0 w-full h-full flex items-center justify-center hidden"
-        >
-        <div
-            class="absolute inset-0 w-full h-full bg-black/50"
-            x-on:click="closeVideo()"
-        ></div>
-        <div class="px-4 relative">
-            <button
-            class="w-12 h-12 mb-5 rounded-full duration-150 bg-gray-800 hover:bg-gray-700 text-white"
-            x-on:click="closeVideo()"
-            >
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="w-5 h-5 m-auto"
-            >
-                <path
-                d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"
-                />
-            </svg>
-            </button>
-            <video x-ref="video" class="rounded-lg w-full max-w-2xl" controls>
-            <source
-                src="https://raw.githubusercontent.com/sidiDev/remote-assets/main/FloatUI.mp4"
-                type="video/mp4"
-            />
-            </video>
-        </div>
-        </div>
-    </section>
-    </div> -->
-
     <!--Hero Section 2-->
     <div class="relative z-10 w-full px-4 py-16 md:px-8 bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://cdn.fastpixel.io/fp/ret_img+v_5b0f+w_794+h_447+q_glossy+to_webp/nebmci.org/wp-content/uploads/2021/05/bongabon-3.png');">
         <div class="max-w-screen-xl mx-auto">
@@ -233,57 +129,68 @@
     </div>
 
     <!-- Section Nav -->
-    <div class="mb-4 border-b border-gray-200 bg-[#FBFBFB] dark:border-gray-700">
-        <ul class="flex flex-wrap justify-center -mb-px text-base font-medium text-center" id="default-styled-tab" data-tabs-active-classes="text-blue-600 hover:text-blue-600 dark:text-blue-500 dark:hover:text-blue-500 border-blue-600 dark:border-blue-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-blue-600 dark:text-gray-400 border-gray-100 hover:border-blue-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
-            <li class="me-2 relative group" role="presentation">
-                <a href="/standing-committees" class="inline-block p-4 border-b-2 rounded-t-lg hover:text-blue-600 hover:border-blue-300">Standing Committees</a>
-                <!-- Dropdown menu -->
-                <div class="absolute left-0 mt-1 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10 border border-blue-200 dark:border-blue-700">
-                    <div class="py-1">
-                        <a href="/15th-sp-committees" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-700 hover:text-blue-600 dark:hover:text-white">15th SP</a>
-                        <a href="/14th-sp-committees" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-700 hover:text-blue-600 dark:hover:text-white">14th SP</a>
-                        <a href="/previous-sp-committees" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-700 hover:text-blue-600 dark:hover:text-white">Previous SP</a>
-                    </div>
-                </div>
-            </li>
-            <li class="me-2 relative group" role="presentation">
-                <a href="/regular-sessions" class="inline-block p-4 border-b-2 rounded-t-lg hover:text-blue-600 hover:border-blue-300">Regular Sessions</a>
-                <!-- Dropdown menu -->
-                <div class="absolute left-0 mt-1 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10 border border-blue-极200 dark:border-blue-700">
-                    <div class="py-1">
-                        <a href="/15th-sp-agenda" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-700 hover:text-blue-600 dark:hover:text-white">15th SP Agenda</a>
-                        <a href="/14th-sp-agenda" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-700 hover:text-blue-600 dark:hover:text-white">14th SP Agenda</a>
-                        <a href="/13th-sp-agenda" class="block px-4 py-2 text-sm text极-gray-700 dark:text-gray-300 hover:极bg-blue-100 dark:hover:bg-blue-700 hover:text-blue-600 dark:hover:text-white">13th SP Agenda</a>
-                    </div>
-                </div>
-            </li>
-            <li class="me-2 relative group" role="presentation">
-                <a href="/resolutions" class="inline-block p-4 border-b-2 rounded-t-lg hover:text-blue-600 hover:border-blue-300">Resolutions</a>
-                <!-- Dropdown menu -->
-                <div class="absolute left-0 mt-1 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10 border border-blue-200 dark:border-blue-700">
-                    <div class="py-1">
-                        <a href="/15th-sp-resolutions" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-700 hover:text-blue-600 dark:hover:text-white">15th SP Resolutions</a>
-                        <a href="/14th-sp-resolutions" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-700 hover:text-blue-600 dark:hover:text-white">14th SP Resolutions</a>
-                        <a href="/previous-resolutions" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-700 hover:text-blue-600 dark:hover:text-white">Previous Resolutions (2010-2022)</a>
-                    </div>
-                </div>
-            </li>
+    <div class="border-b border-gray-200 bg-white dark:border-gray-700">
+        <ul class="flex justify-center text-base font-medium text-center space-x-6 text-gray-600" id="default-tab" role="tablist">
+
+            <!-- Standing Committees -->
             <li class="relative group" role="presentation">
-                <a href="/ordinances" class="inline-block p-4 border-b-2 rounded-t-lg hover:text-blue-600 hover:border-blue-300">Ordinances</a>
-                <!-- Dropdown menu -->
-                <div class="absolute left-0 mt-1 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10 border border-blue-200 dark:border-blue-700">
-                    <div class="py-1">
-                        <a href="/15th-sp-ordinances" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-700 hover:text-blue-600 dark:hover:text-white">15th SP Ordinances</a>
-                        <a href="/14th-sp-ordinances" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-700 hover:text-blue-600 dark:hover:text-white">14th SP Ordinances</a>
-                        <a href="/13th-sp-ordinances" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-700 hover:text-blue-600 dark:hover:text-white">13th SP Ordinances</a>
-                        <a href="/previous-ordinances" class="block px-4极 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-700 hover:text-blue-600 dark:hover:text-white">Previous Ordinances (1948-12 SP)</a>
-                    </div>
-                </div>
+                <button class="inline-block px-4 py-3 border-b-2 border-transparent rounded-t-lg hover:text-blue-600 hover:border-blue-600" 
+                        id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    Standing Committees
+                </button>
+                <!-- Dropdown -->
+                <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md w-40 text-gray-600">
+                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous SP</a></li>
+                </ul>
+            </li>
+
+            <!-- Regular Sessions -->
+            <li class="relative group" role="presentation">
+                <button class="inline-block px-4 py-3 border-b-2 border-transparent rounded-t-lg hover:text-blue-600 hover:border-blue-600" 
+                        id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">
+                    Regular Sessions
+                </button>
+                <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md w-40 text-gray-600">
+                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP Agenda</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP Agenda</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">13th SP Agenda</a></li>
+                </ul>
+            </li>
+
+            <!-- Resolution -->
+            <li class="relative group" role="presentation">
+                <button class="inline-block px-4 py-3 border-b-2 border-transparent rounded-t-lg hover:text-blue-600 hover:border-blue-600" 
+                        id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">
+                    Resolutions
+                </button>
+                <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md w-40 text-gray-600">
+                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP Resolutions</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP Resolutions</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous Resolutions (2010-2022)</a></li>
+                </ul>
+            </li>
+
+            <!-- Ordinances -->
+            <li class="relative group" role="presentation">
+                <button class="inline-block px-4 py-3 border-b-2 border-transparent rounded-t-lg hover:text-blue-600 hover:border-blue-600" 
+                        id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">
+                    Ordinances
+                </button>
+                <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md w-40 text-gray-600">
+                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th Ordinances</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th Ordinances</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">13th Ordinances</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous Ordinances (1948-12 SP)</a></li>
+                </ul>
             </li>
         </ul>
     </div>
 
- <!-- nyenye -->
+
+
+
 
 
 

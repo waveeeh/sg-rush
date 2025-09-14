@@ -39,8 +39,8 @@
             
             <nav class="hidden md:flex items-center space-x-8">
                 <a href="../landing.php" class="text-gray-600 hover:text-primary transition-colors">SP Home</a>
-                <a href="index.php" class="text-primary font-medium">About the Sanggunian</a>
-                <a href="../proposed/index.php" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinance</a>
+                <a href="index.php" class="text-gray-600 hover:text-primary transition-colors">About the Sanggunian</a>
+                <a href="../proposed/index.php" class="text-primary font-medium">Proposed Ordinance</a>
             </nav>
             
             <div class="flex items-center space-x-4">
@@ -133,127 +133,12 @@
         </ul>
     </div>
 
-
-
-    <!-- Tabs Section -->
-    <section class="py-16 bg-light" x-data="{ selectedTab: 'The Mace' }">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-
-                <!-- Tab Buttons -->
-                <div class="flex flex-wrap gap-2 mb-8 justify-start">
-                    <button @click="selectedTab = 'The Mace'" 
-                            :class="selectedTab === 'The Mace' ? 'px-5 py-3 rounded-lg bg-primary text-white font-medium' : 'px-5 py-3 rounded-lg bg-white text-gray-600 hover:text-primary font-medium'">
-                        The Mace
-                    </button>
-                    <button @click="selectedTab = 'The Secretary'" 
-                            :class="selectedTab === 'The Secretary' ? 'px-5 py-3 rounded-lg bg-primary text-white font-medium' : 'px-5 py-3 rounded-lg bg-white text-gray-600 hover:text-primary font-medium'">
-                        The Secretary
-                    </button>
-                    <button @click="selectedTab = 'The Sergeant of Arms'" 
-                            :class="selectedTab === 'The Sergeant of Arms' ? 'px-5 py-3 rounded-lg bg-primary text-white font-medium' : 'px-5 py-3 rounded-lg bg-white text-gray-600 hover:text-primary font-medium'">
-                        The Sergeant of Arms
-                    </button>
-                    <button @click="selectedTab = 'The Session Hall'" 
-                            :class="selectedTab === 'The Session Hall' ? 'px-5 py-3 rounded-lg bg-primary text-white font-medium' : 'px-5 py-3 rounded-lg bg-white text-gray-600 hover:text-primary font-medium'">
-                        The Session Hall
-                    </button>
-                </div>
-
-                <!-- Tab Content: The Mace -->
-                <div x-show="selectedTab === 'The Mace'" class="bg-white rounded-xl shadow-md p-6 md:p-8">
-                    <div class="flex flex-col md:flex-row gap-8 items-center">
-                        <div class="md:w-2/5">
-                            <img src="https://images.unsplash.com/photo-1577720643272-265f0936742f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                                alt="The Mace"
-                                class="w-full h-64 object-cover rounded-lg shadow-md">
-                        </div>
-                        <div class="md:w-3/5">
-                            <h2 class="text-2xl font-bold text-dark mb-4">The Mace of Authority</h2>
-                            <p class="text-gray-600 mb-4">
-                                The Mace symbolizes the authority and dignity of the Sangguniang Panlungsod. It is displayed during official sessions and represents the power vested in the council by the people of Bongabon.
-                            </p>
-                            <p class="text-gray-600">
-                                Crafted with precision and care, the Mace features elements that represent the rich history and culture of our community, serving as a reminder of our commitment to serve with integrity and honor.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tab Content: The Secretary -->
-                <div x-show="selectedTab === 'The Secretary'" class="bg-white rounded-xl shadow-md p-6 md:p-8">
-                    <div class="flex flex-col md:flex-row gap-8 items-center">
-                        <div class="md:w-2/5">
-                            <img src="https://images.unsplash.com/photo-1591012911204-2d7d3c947e07?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                                alt="The Secretary"
-                                class="w-full h-64 object-cover rounded-lg shadow-md">
-                        </div>
-                        <div class="md:w-3/5">
-                            <h2 class="text-2xl font-bold text-dark mb-4">The Secretary</h2>
-                            <p class="text-gray-600 mb-4">
-                                The Secretary manages records and correspondence of the council, ensuring smooth operations and accurate documentation.
-                            </p>
-                            <p class="text-gray-600">
-                                The Secretary plays a vital role in supporting council members and facilitating communication with the public.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tab Content: The Sergeant of Arms -->
-                <div x-show="selectedTab === 'The Sergeant of Arms'" class="bg-white rounded-xl shadow-md p-6 md:p-8">
-                    <div class="flex flex-col md:flex-row gap-8 items-center">
-                        <div class="md:w-2/5">
-                            <img src="https://images.unsplash.com/photo-1612831660032-5f347d7367c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                                alt="The Sergeant of Arms"
-                                class="w-full h-64 object-cover rounded-lg shadow-md">
-                        </div>
-                        <div class="md:w-3/5">
-                            <h2 class="text-2xl font-bold text-dark mb-4">The Sergeant of Arms</h2>
-                            <p class="text-gray-600 mb-4">
-                                The Sergeant of Arms maintains order during sessions and ensures the security of council proceedings.
-                            </p>
-                            <p class="text-gray-600">
-                                This position represents discipline and order, symbolizing the council’s authority.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tab Content: The Session Hall -->
-                <div x-show="selectedTab === 'The Session Hall'" class="bg-white rounded-xl shadow-md p-6 md:p-8">
-                    <div class="flex flex-col md:flex-row gap-8 items-center">
-                        <div class="md:w-2/5">
-                            <img src="https://images.unsplash.com/photo-1591012911204-2d7d3c947e07?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                                alt="The Session Hall"
-                                class="w-full h-64 object-cover rounded-lg shadow-md">
-                        </div>
-                        <div class="md:w-3/5">
-                            <h2 class="text-2xl font-bold text-dark mb-4">The Session Hall</h2>
-                            <p class="text-gray-600 mb-4">
-                                The Session Hall is where official council meetings and public gatherings take place, reflecting the history and governance of Bongabon.
-                            </p>
-                            <p class="text-gray-600">
-                                The hall stands as a testament to the civic pride and heritage of Bongabon.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <!-- Features/Content Section -->
+    <!-- Features/Content Section pwedeng pdf na lang to pag read more -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Our Legislative Processes</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Proposed measures in the Sangguniang Panlungsod</h2>
                 <div class="h-1 w-20 bg-primary mx-auto mb-6"></div>
-                <p class="text-gray-600">Learn about how we create, debate, and pass legislation that serves the people of Bongabon.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -263,6 +148,12 @@
                     </div>
                     <h3 class="text-xl font-semibold text-dark mb-3">Ordinances</h3>
                     <p class="text-gray-600">Local laws enacted by the Sanggunian to regulate community affairs and promote general welfare.</p>
+                    <a class="text-indigo-500 inline-flex items-center">Learn More
+                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
                 </div>
                 
                 <div class="bg-light rounded-xl p-6 text-center hover:shadow-md transition-shadow">
@@ -271,6 +162,12 @@
                     </div>
                     <h3 class="text-xl font-semibold text-dark mb-3">Resolutions</h3>
                     <p class="text-gray-600">Formal expressions of opinion, will, or intent intended to govern the administrative business of the Sanggunian.</p>
+                    <a class="text-indigo-500 inline-flex items-center">Learn More
+                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
                 </div>
                 
                 <div class="bg-light rounded-xl p-6 text-center hover:shadow-md transition-shadow">
@@ -279,6 +176,12 @@
                     </div>
                     <h3 class="text-xl font-semibold text-dark mb-3">Sessions</h3>
                     <p class="text-gray-600">Regular meetings where Sanggunian members discuss, debate, and decide on legislative matters.</p>
+                    <a class="text-indigo-500 inline-flex items-center">Learn More
+                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
                 </div>
                 
                 <div class="bg-light rounded-xl p-6 text-center hover:shadow-md transition-shadow">
@@ -287,90 +190,80 @@
                     </div>
                     <h3 class="text-xl font-semibold text-dark mb-3">Committees</h3>
                     <p class="text-gray-600">Specialized groups that study specific issues in depth and make recommendations to the full Sanggunian.</p>
+                    <a class="text-indigo-500 inline-flex items-center">Learn More
+                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    
-
-    <!-- Large Image Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Our Session Hall</h2>
-                <div class="h-1 w-20 bg-primary mx-auto mb-6"></div>
-                <p class="text-gray-600">The place where legislation comes to life through discussion, debate, and democratic processes.</p>
-            </div>
-            
-            <div class="rounded-xl overflow-hidden shadow-xl">
-                <img src="https://www.fcnl.org/sites/default/files/2021-02/FCNL-Legislative-Process-2020.png" 
-                     alt="Sanggunian Session Hall" 
-                     class="w-full h-auto object-cover">
-            </div>
+    <!-- Pagination aayusin pa-->
+    <div class="max-w-screen-xl mx-auto mt-12 px-4 text-gray-600 md:px-8">
+        <div class="hidden items-center justify-between sm:flex" aria-label="Pagination">
+            <a href="#" class="hover:text-indigo-600 flex items-center gap-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z" clip-rule="evenodd" />
+                </svg>
+                Previous
+            </a>
+            <ul class="flex items-center gap-1">
+                <li class="text-sm">
+                    <div>
+                        1
+                    </div>
+                </li>
+                <li class="text-sm">
+                    <a href="#" aria-current="page" class="px-3 py-2 rounded-lg duration-150 hover:text-indigo-600 hover:bg-indigo-50 bg-indigo-50 text-indigo-600 font-medium">
+                        2
+                    </a>
+                </li>
+                <li class="text-sm">
+                    <a href="#" class="px-3 py-2 rounded-lg duration-150 hover:text-indigo-600 hover:bg-indigo-50">
+                        3
+                    </a>
+                </li>
+                <li class="text-sm">
+                    <div>
+                        ...
+                    </div>
+                </li>
+                <li class="text-sm">
+                    <a href="#" class="px-3 py-2 rounded-lg duration-150 hover:text-indigo-600 hover:bg-indigo-50">
+                        8
+                    </a>
+                </li>
+                <li class="text-sm">
+                    <a href="#" class="px-3 py-2 rounded-lg duration-150 hover:text-indigo-600 hover:bg-indigo-50">
+                        9
+                    </a>
+                </li>
+                <li class="text-sm">
+                    <a href="#" class="px-3 py-2 rounded-lg duration-150 hover:text-indigo-600 hover:bg-indigo-50">
+                        10
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="hover:text-indigo-600 flex items-center gap-x-2">
+                Next
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                    <path fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clip-rule="evenodd" />
+                </svg>
+            </a>
         </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section class="py-10 bg-light">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Publications & Resources</h2>
-                <div class="h-1 w-20 bg-primary mx-auto mb-6"></div>
-                <p class="text-gray-600">Access our official documents, reports, and legislative materials.</p>
+        <!-- On mobile version -->
+        <div class="flex items-center justify-between text-sm text-gray-600 font-medium sm:hidden">
+            <a href="#" class="px-4 py-2 border rounded-lg duration-150 hover:bg-gray-50">Previous</a>
+            <div class="font-medium">
+                Page 1 of 9
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                             alt="Ordinances" 
-                             class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-dark mb-3">Ordinances</h3>
-                        <p class="text-gray-600 mb-4">Browse through our collection of enacted ordinances.</p>
-                        <a href="#" class="text-primary font-semibold hover:underline flex items-center">
-                            View ordinances
-                            <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                             alt="Resolutions" 
-                             class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-dark mb-3">Resolutions</h3>
-                        <p class="text-gray-600 mb-4">Review our formal expressions of opinion and intent.</p>
-                        <a href="#" class="text-primary font-semibold hover:underline flex items-center">
-                            View resolutions
-                            <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                             alt="Reports" 
-                             class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-dark mb-3">Annual Reports</h3>
-                        <p class="text-gray-600 mb-4">Access our yearly performance and accomplishment reports.</p>
-                        <a href="#" class="text-primary font-semibold hover:underline flex items-center">
-                            View reports
-                            <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <a href="#" class="px-4 py-2 border rounded-lg duration-150 hover:bg-gray-50">Next</a>
         </div>
-    </section>
+    </div>
+
 
     <!--Contact Section-->
     <main class="py-8 bg-white" x-data="contactComponent()">
