@@ -140,9 +140,9 @@
                 </button>
                 <!-- Dropdown -->
                 <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md w-40 text-gray-600">
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous SP</a></li>
+                    <li><a href="../sg/standingc/15thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP</a></li>
+                    <li><a href="../sg/standingc/14thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP</a></li>
+                    <li><a href="../sg/standingc/previous.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous SP</a></li>
                 </ul>
             </li>
 
@@ -153,9 +153,9 @@
                     Regular Sessions
                 </button>
                 <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md w-40 text-gray-600">
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP Agenda</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP Agenda</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">13th SP Agenda</a></li>
+                    <li><a href="../sg/regulars/15thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP Agenda</a></li>
+                    <li><a href="../sg/regulars/14thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP Agenda</a></li>
+                    <li><a href="../sg/regulars/13thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">13th SP Agenda</a></li>
                 </ul>
             </li>
 
@@ -166,9 +166,9 @@
                     Resolutions
                 </button>
                 <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md w-40 text-gray-600">
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP Resolutions</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP Resolutions</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous Resolutions (2010-2022)</a></li>
+                    <li><a href="../sg/resolution/15thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP Resolutions</a></li>
+                    <li><a href="../sg/resolution/14thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP Resolutions</a></li>
+                    <li><a href="../sg/resolution/previous.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous Resolutions (2010-2022)</a></li>
                 </ul>
             </li>
 
@@ -324,117 +324,70 @@
 
 
     <!-- Footer -->
-    <footer class="text-gray-600 body-font">
-        <div class="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                </svg>
-                <span class="ml-3 text-xl">Tailblocks</span>
-            </a>
-            <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+    <footer class="bg-dark text-white pt-10 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-6">SP Bongabon</h3>
+                    <p class="text-gray-400 mb-6">The Sangguniang Panlungsod of Bongabon is committed to serving the community through effective legislation and governance.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Ordinances</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Resolutions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Publications</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">News & Updates</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Government Links</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Downloadable Forms</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Contact Info</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>Municipal Hall Building, Bongabon, Nueva Ecija</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3"></i>
+                            <span>(044) 123-4567</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>sanggunian@bongabon.gov.ph</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                <nav class="list-none mb-10">
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">First Link</a>
-                </li>
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-                </li>
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-                </li>
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                </li>
-                </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                <nav class="list-none mb-10">
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">First Link</a>
-                </li>
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-                </li>
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-                </li>
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                </li>
-                </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                <nav class="list-none mb-10">
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">First Link</a>
-                </li>
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-                </li>
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-                </li>
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                </li>
-                </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                <nav class="list-none mb-10">
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">First Link</a>
-                </li>
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-                </li>
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-                </li>
-                <li>
-                    <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                </li>
-                </nav>
-            </div>
-            </div>
-        </div>
-        <div class="bg-gray-100">
-            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p class="text-gray-500 text-sm text-center sm:text-left">© 2025 Tailblocks —
-                <a href=" " rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@sdfsdfs</a>
-            </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-                <a class="text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-                </a>
-                <a class="ml-3 text-gray-500">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-                </a>
-                <a class="ml-3 text-gray-500">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                </svg>
-                </a>
-                <a class="ml-3 text-gray-500">
-                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                </svg>
-                </a>
-            </span>
+            
+            <div class="border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2023 Sangguniang Panlungsod ng Bongabon. All rights reserved.</p>
             </div>
         </div>
     </footer>

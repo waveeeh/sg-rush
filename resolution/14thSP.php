@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sangguniang Panlungsod ng Bongabon</title>
+    <title>Sanggunian ng Bongabon</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <script>
@@ -22,13 +24,14 @@
             }
         }
     </script>
+
 </head>
-<body class="bg-gray-50 font-sans antialiased">
+<body class="bg-gray-100">
 
     <!-- Header -->
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="../landing.php" class="flex items-center space-x-2">
+            <a href="landing.php" class="flex items-center space-x-2">
                 <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -38,9 +41,9 @@
             </a>
             
             <nav class="hidden md:flex items-center space-x-8">
-                <a href="../landing.php" class="text-gray-600 hover:text-primary transition-colors">SP Home</a>
-                <a href="../about/index.php" class="text-gray-600 hover:text-primary transition-colors">About the Sanggunian</a>
-                <a href="../proposed/index.php" class="text-primary font-medium">Proposed Ordinance</a>
+                <a href="landing.php" class="text-primary font-medium">SP Home</a>
+                <a href="about/index.php" class="text-gray-600 hover:text-primary transition-colors">About the Sanggunian</a>
+                <a href="../sg/proposed/index.php" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinance</a>
             </nav>
             
             <div class="flex items-center space-x-4">
@@ -58,7 +61,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!--Hero Section 2-->
     <div class="relative z-10 w-full px-4 py-16 md:px-8 bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://cdn.fastpixel.io/fp/ret_img+v_5b0f+w_794+h_447+q_glossy+to_webp/nebmci.org/wp-content/uploads/2021/05/bongabon-3.png');">
         <div class="max-w-screen-xl mx-auto">
             <div class="space-y-5 max-w-4xl mx-auto text-center">
@@ -132,79 +135,22 @@
             </li>
         </ul>
     </div>
-    
 
-    <!-- Features/Content Section pwedeng pdf na lang to pag read more -->
-    <section class="py-16 bg-white">
+    <!--Content-->
+    <section class="py-12 bg-white">
         <div class="container mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Proposed measures in the Sangguniang Panlungsod</h2>
+            <div class="text-center max-w-3xl mx-auto mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">14th SP Resolution</h2>
                 <div class="h-1 w-20 bg-primary mx-auto mb-6"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-light rounded-xl p-6 text-center hover:shadow-md transition-shadow">
-                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5">
-                        <i class="fas fa-file-alt text-primary text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-dark mb-3">Ordinances</h3>
-                    <p class="text-gray-600">Local laws enacted by the Sanggunian to regulate community affairs and promote general welfare.</p>
-                    <a class="text-indigo-500 inline-flex items-center">Learn More
-                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
-                </div>
-                
-                <div class="bg-light rounded-xl p-6 text-center hover:shadow-md transition-shadow">
-                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5">
-                        <i class="fas fa-scroll text-primary text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-dark mb-3">Resolutions</h3>
-                    <p class="text-gray-600">Formal expressions of opinion, will, or intent intended to govern the administrative business of the Sanggunian.</p>
-                    <a class="text-indigo-500 inline-flex items-center">Learn More
-                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
-                </div>
-                
-                <div class="bg-light rounded-xl p-6 text-center hover:shadow-md transition-shadow">
-                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5">
-                        <i class="fas fa-users text-primary text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-dark mb-3">Sessions</h3>
-                    <p class="text-gray-600">Regular meetings where Sanggunian members discuss, debate, and decide on legislative matters.</p>
-                    <a class="text-indigo-500 inline-flex items-center">Learn More
-                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
-                </div>
-                
-                <div class="bg-light rounded-xl p-6 text-center hover:shadow-md transition-shadow">
-                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5">
-                        <i class="fas fa-clipboard-list text-primary text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-dark mb-3">Committees</h3>
-                    <p class="text-gray-600">Specialized groups that study specific issues in depth and make recommendations to the full Sanggunian.</p>
-                    <a class="text-indigo-500 inline-flex items-center">Learn More
-                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
-                </div>
             </div>
         </div>
     </section>
 
+    <!-- lagay ng search button kaso saan hahaha naka sticky header redundant-->
+
     <!-- Pili ka ano mas maganda -->
     <section class="text-gray-600 bg-white body-font overflow-hidden">
-        <div class="container px-5 py-24 mx-auto">
+        <div class="container px-5 py-2 mx-auto">
             <div class="-my-8 divide-y-2 divide-gray-100">
                 <div class="bg-light rounded-xl p-6 hover:shadow-md transition-shadow">
                     <div class="py-8 flex flex-wrap md:flex-nowrap">
@@ -223,70 +169,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Pagination aayusin pa-->
-    <div class="max-w-screen-xl mx-auto mt-12 px-4 text-gray-600 md:px-8">
-        <div class="hidden items-center justify-between sm:flex" aria-label="Pagination">
-            <a href="#" class="hover:text-indigo-600 flex items-center gap-x-2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-                    <path fill-rule="evenodd" d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z" clip-rule="evenodd" />
-                </svg>
-                Previous
-            </a>
-            <ul class="flex items-center gap-1">
-                <li class="text-sm">
-                    <div>
-                        1
-                    </div>
-                </li>
-                <li class="text-sm">
-                    <a href="#" aria-current="page" class="px-3 py-2 rounded-lg duration-150 hover:text-indigo-600 hover:bg-indigo-50 bg-indigo-50 text-indigo-600 font-medium">
-                        2
-                    </a>
-                </li>
-                <li class="text-sm">
-                    <a href="#" class="px-3 py-2 rounded-lg duration-150 hover:text-indigo-600 hover:bg-indigo-50">
-                        3
-                    </a>
-                </li>
-                <li class="text-sm">
-                    <div>
-                        ...
-                    </div>
-                </li>
-                <li class="text-sm">
-                    <a href="#" class="px-3 py-2 rounded-lg duration-150 hover:text-indigo-600 hover:bg-indigo-50">
-                        8
-                    </a>
-                </li>
-                <li class="text-sm">
-                    <a href="#" class="px-3 py-2 rounded-lg duration-150 hover:text-indigo-600 hover:bg-indigo-50">
-                        9
-                    </a>
-                </li>
-                <li class="text-sm">
-                    <a href="#" class="px-3 py-2 rounded-lg duration-150 hover:text-indigo-600 hover:bg-indigo-50">
-                        10
-                    </a>
-                </li>
-            </ul>
-            <a href="#" class="hover:text-indigo-600 flex items-center gap-x-2">
-                Next
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-                    <path fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z" clip-rule="evenodd" />
-                </svg>
-            </a>
-        </div>
-        <!-- On mobile version -->
-        <div class="flex items-center justify-between text-sm text-gray-600 font-medium sm:hidden">
-            <a href="#" class="px-4 py-2 border rounded-lg duration-150 hover:bg-gray-50">Previous</a>
-            <div class="font-medium">
-                Page 1 of 9
-            </div>
-            <a href="#" class="px-4 py-2 border rounded-lg duration-150 hover:bg-gray-50">Next</a>
-        </div>
-    </div>
-
 
     <!--Contact Section-->
     <main class="py-8 bg-white" x-data="contactComponent()">
@@ -356,6 +238,10 @@
     }
     </script>
 
+    
+   
+
+
     <!-- Footer -->
     <footer class="bg-dark text-white pt-10 pb-8">
         <div class="container mx-auto px-4">
@@ -424,6 +310,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>

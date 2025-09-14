@@ -39,7 +39,7 @@
             
             <nav class="hidden md:flex items-center space-x-8">
                 <a href="../landing.php" class="text-gray-600 hover:text-primary transition-colors">SP Home</a>
-                <a href="index.php" class="text-primary font-medium">About the Sanggunian</a>
+                <a href="../about/index.php" class="text-primary font-medium">About the Sanggunian</a>
                 <a href="../proposed/index.php" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinance</a>
             </nav>
             
@@ -88,9 +88,9 @@
                 </button>
                 <!-- Dropdown -->
                 <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md w-40 text-gray-600">
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous SP</a></li>
+                    <li><a href="../standingc/15thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP</a></li>
+                    <li><a href="../standingc/14thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP</a></li>
+                    <li><a href="../standingc/previous.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous SP</a></li>
                 </ul>
             </li>
 
@@ -101,9 +101,9 @@
                     Regular Sessions
                 </button>
                 <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md w-40 text-gray-600">
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP Agenda</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP Agenda</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">13th SP Agenda</a></li>
+                    <li><a href="../regulars/15thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP Agenda</a></li>
+                    <li><a href="../regulars/14thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP Agenda</a></li>
+                    <li><a href="../regulars/13thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">13th SP Agenda</a></li>
                 </ul>
             </li>
 
@@ -114,9 +114,9 @@
                     Resolutions
                 </button>
                 <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md w-40 text-gray-600">
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP Resolutions</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP Resolutions</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous Resolutions (2010-2022)</a></li>
+                    <li><a href="../resolution/15thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP Resolutions</a></li>
+                    <li><a href="../resolution/14thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP Resolutions</a></li>
+                    <li><a href="../resolution/previous.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous Resolutions (2010-2022)</a></li>
                 </ul>
             </li>
 
@@ -139,9 +139,9 @@
     <!-- Council Members Section -->
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-12 mx-auto">
-            <div class="flex flex-col text-center w-full mb-8">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">City Council Members</h1>
-                <div class="h-1 w-20 bg-primary mx-auto mb-2"></div>
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">City Council Members</h2>
+                <div class="h-1 w-20 bg-primary mx-auto mb-6"></div>
             </div>
             <div class="flex flex-wrap -m-2">
                 <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
@@ -481,7 +481,7 @@
     </script>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white pt-16 pb-8">
+    <footer class="bg-dark text-white pt-10 pb-8">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                 <div>
@@ -543,7 +543,7 @@
                 </div>
             </div>
             
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+            <div class="border-t border-gray-800 text-center text-gray-400">
                 <p>&copy; 2023 Sangguniang Panlungsod ng Bongabon. All rights reserved.</p>
             </div>
         </div>

@@ -332,7 +332,7 @@
             </div>
             </div>
         </div>
-        </section>
+    </section>
 
 
     <!--Contact Section-->
