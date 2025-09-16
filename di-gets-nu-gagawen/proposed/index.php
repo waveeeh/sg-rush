@@ -38,7 +38,7 @@
 <section class="py-12 bg-white">
     <div class="container mx-auto px-4">
         <div class="text-center max-w-3xl mx-auto mb-8">
-            <h1 class="text-3xl md:text-4xl font-bold text-dark mb-4">PROPOSED ORDINANCES</h1>
+            <h1 class="text-3xl md:text-4xl font-bold text-dark mb-4">Proposed Ordinances in the Sangguniang Bayan</h1>
             <div class="h-1 w-20 bg-primary mx-auto mb-6"></div>
         </div>
     </div>
