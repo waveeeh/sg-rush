@@ -38,8 +38,7 @@
 <section class="py-12 bg-white">
     <div class="container mx-auto px-4">
         <div class="text-center max-w-3xl mx-auto mb-8">
-            <h1 class="text-3xl md:text-4xl font-bold text-dark mb-4">Proposed Measures in the Sangguniang Bayan
-</h1>
+            <h1 class="text-3xl md:text-4xl font-bold text-dark mb-4">PROPOSED ORDINANCES</h1>
             <div class="h-1 w-20 bg-primary mx-auto mb-6"></div>
         </div>
     </div>
@@ -63,7 +62,7 @@
 
 <?php
 // Pagination setup
-$limit = 1;
+$limit = 10;
 $page_num = isset($_GET['p']) ? intval($_GET['p']) : 1;
 $offset = ($page_num - 1) * $limit;
 
