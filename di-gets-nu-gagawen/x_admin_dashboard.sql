@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 16, 2025 at 10:17 PM
+-- Generation Time: Sep 16, 2025 at 10:34 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -101,7 +101,7 @@ INSERT INTO `content` (`id`, `category_id`, `subcategory_id`, `title`, `subtitle
 (27, 3, 8, 'aweg aewg awe g', 'w egaw eg', 'uploads/Sample-file---Copy_1758025733.pdf', '2025-09-16 12:28:53', NULL),
 (28, 2, 5, 'a fawf aw faw', '', 'uploads/Sample file_1758027080.pdf', '2025-09-16 12:30:04', '2025-09-16 12:51:20'),
 (31, 1, 1, 'malupet', '', 'uploads/Sample file_1758039634.pdf', '2025-09-16 16:20:34', NULL),
-(32, 1, 1, 'wat ef maraming words', 'longger <b> Lorem <b> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i', 'uploads/Sample file_1758039712.pdf', '2025-09-16 16:21:52', '2025-09-16 16:51:23'),
+(32, 1, 1, 'wat ef maraming words', 'longger <b> Lorem </b> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i', 'uploads/Sample file_1758039712.pdf', '2025-09-16 16:21:52', '2025-09-16 20:34:10'),
 (33, 1, 1, 'walng subtitle pero mahang title aa eb eber brfsvervr baebb ;ij hwie e awbv we wev az vd vferb aervzdfvc zb ;ij hwie e awbv we wev az vd vferb aervzdfvc z', '', 'uploads/Sample file_1758039904.pdf', '2025-09-16 16:25:04', NULL),
 (34, 1, 1, 'short vr', 'make it short', 'uploads/Sample file_1758040453.pdf', '2025-09-16 16:34:13', '2025-09-16 16:36:38'),
 (35, 3, 9, 'afasfafijp pjv', '', NULL, '2025-09-16 19:41:32', NULL),
