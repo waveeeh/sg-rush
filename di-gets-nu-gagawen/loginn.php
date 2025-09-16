@@ -5,7 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 // Redirect if already logged in
 if (isset($_SESSION['admin'])) {
-    header("Location: dashboard.php");
+    header("Location: dashlogin.php");
     exit;
 }
 

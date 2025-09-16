@@ -53,7 +53,7 @@
     <div class="container px-1 py-12 mx-auto">
         <div class="text-center max-w-3xl mx-auto mb-2">
             <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Previous Sangguniang Bayan</h2>
-            <h1 class="text-3xl md:text-4xl font-bold text-dark mb-4">STANDING COMMITTEE</h1>
+            <h1 class="text-3xl md:text-4xl font-bold text-dark mb-4">STANDING COMMITTEES</h1>
             <div class="h-1 w-20 bg-primary mx-auto mb-2"></div>
         </div>
     </div>
@@ -92,7 +92,7 @@
         <div class="container px-5 py-2 mx-auto">
             <div class="container px-1 py-12 mx-auto">
                 <div class="text-center max-w-3xl mx-auto mb-2">
-                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">STANDING COMMITTEE</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">STANDING COMMITTEES</h2>
                     <div class="h-1 w-20 bg-primary mx-auto mb-2"></div>
                 </div>
             </div>

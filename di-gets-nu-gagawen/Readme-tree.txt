@@ -1,9 +1,10 @@
-di-gets-nu-gagawen:
 │   dashboard.php
 │   db.php
 │   landing.php
 │   loginn.php
 │   logout.php
+│   Readme-tree.txt
+│   x_admin_dashboard.sql
 │
 ├───about
 │       13thSB.php
@@ -19,6 +20,7 @@ di-gets-nu-gagawen:
 ├───includes
 │       .htaccess
 │       about-header.php
+│       default-banner.php
 │       default-header.php
 │       footer.php
 │       section-nav.php
@@ -45,7 +47,35 @@ di-gets-nu-gagawen:
 ├───s
 │       #para-sa-search-ito.txt
 │
-└───standingc
-        14thSB.php
-        15thSB.php
-        previous.php
+├───standingc
+│       14thSB.php
+│       15thSB.php
+│       previous.php
+│
+├───uploads
+│       1758020049_Sample file.pdf
+│       1758020072_Sample file.pdf
+│       1758025017_Sample file.pdf
+│       Sample file - Copy_1758025804.pdf
+│       Sample file.pdf
+│       Sample file_1758027080.pdf
+│       Sample file_1758029100.pdf
+│       Sample file_1758039634.pdf
+│       Sample file_1758039712.pdf
+│       Sample file_1758039904.pdf
+│       Sample file_1758040453.pdf
+│       Sample file_1758052191.pdf
+│       Sample file_1758052213.pdf
+│       Sample file_1758052229.pdf
+│       Sample file_1758052243.pdf
+│       Sample file_1758052260.pdf
+│       Sample file_1758052276.pdf
+│       Sample file_1758052292.pdf
+│       Sample file_1758052317.pdf
+│       Sample file_1758052334.pdf
+│       Sample file_1758052352.pdf
+│       Sample-file---Copy_1758025717.pdf
+│       Sample-file---Copy_1758025733.pdf
+│
+└───v
+        vw.php

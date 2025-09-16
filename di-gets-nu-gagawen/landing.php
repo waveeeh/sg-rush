@@ -44,7 +44,7 @@
     <nav class="hidden md:flex items-center space-x-8">
       <a href="landing.php" class="text-primary font-medium">Home</a>
       <a href="about/index.php" class="text-gray-600 hover:text-primary transition-colors">About the Sanggunian</a>
-      <a href="proposed/index.php" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinance</a>
+      <a href="proposed/index.php" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinances</a>
     </nav>
 
     <!-- Search + Mobile Toggle -->
