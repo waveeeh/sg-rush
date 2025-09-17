@@ -1,10 +1,11 @@
-<!-- Default Header -->
+ <!-- Proposed Ordinances Header -->
 <header class="sticky top-0 z-50 bg-white shadow-md">
   <div class="container mx-auto px-4 py-3 flex justify-between items-center">
     <!-- Logo -->
     <a href="../landing.php" class="flex items-center space-x-2">
       <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-        <img src="../assets/icon.png" alt="Sangguniang Bayan Logo" class="w-10 h-10 rounded-full" />
+<img src="../assets/icon.png" alt="Sangguniang Bayan Logo" class="w-10 h-10 rounded-full" />
+
       </div>
       <span class="text-xl font-bold text-dark">SB Bongabon</span>
     </a>
@@ -12,8 +13,8 @@
     <!-- Desktop Nav -->
     <nav class="hidden md:flex items-center space-x-8">
       <a href="../landing.php" class="text-gray-600 hover:text-primary transition-colors">Home</a>
-      <a href="../about/index.php" class="text-gray-600 hover:text-primary transition-colors">About the Sanggunian</a>
-      <a href="../proposed/index.php" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinances</a>
+      <a href="index.php" class="text-gray-600 hover:text-primary transition-colors">About the Sanggunian</a>
+      <a href="../proposed/index.php" class="text-primary font-mediums">Proposed Ordinances</a>
     </nav>
 
     <!-- Search + Mobile Toggle -->
@@ -48,7 +49,8 @@
   <!-- Centered Logo inside mobile menu -->
   <div class="flex flex-col items-center justify-center py-6 border-b">
     <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
-      <img src="../assets/icon.png" alt="Sangguniang Bayan Logo" class="rounded-full" />
+   <img src="../assets/icon.png" alt="Sangguniang Bayan Logo" class="rounded-full" />
+
     </div>
     <span class="mt-3 text-2xl font-bold text-dark">SB Bongabon</span>
   </div>
@@ -67,7 +69,7 @@
   <!-- Navigation Links -->
   <nav class="flex flex-col space-y-4 px-4 py-6 text-lg">
     <a href="../landing.php" class="text-gray-600 hover:text-primary transition-colors">Home</a>
-    <a href="../about/index.php" class="text-gray-600 hover:text-primary transition-colors">About the Sanggunian</a>
+    <a href="index.php" class="text-primary font-medium">About the Sanggunian</a>
     <a href="../proposed/index.php" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinance</a>
   </nav>
 </div>

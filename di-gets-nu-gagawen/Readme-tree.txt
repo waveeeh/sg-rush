@@ -1,3 +1,4 @@
+di-gets-nu-gagawen
 │   dashboard.php
 │   db.php
 │   landing.php
@@ -23,33 +24,40 @@
 │       default-banner.php
 │       default-header.php
 │       footer.php
+│       home-header.php
+│       proposed-header.php
 │       section-nav.php
 │
 ├───ordinance
 │       13thSB.php
 │       14thSB.php
-│       15thSB.php
+│       index.php
 │       previous.php
+│       search.php
 │
 ├───proposed
 │       index.php
+│       search.php
 │
 ├───regulars
 │       13thSB.php
 │       14thSB.php
-│       15thSB.php
+│       index.php
+│       search.php
 │
 ├───resolution
 │       14thSB.php
-│       15thSB.php
+│       index.php
 │       previous.php
+│       search.php
 │
 ├───s
-│       #para-sa-search-ito.txt
+│       index.php
+│       results.php
 │
 ├───standingc
 │       14thSB.php
-│       15thSB.php
+│       index.php
 │       previous.php
 │
 ├───uploads
@@ -74,8 +82,12 @@
 │       Sample file_1758052317.pdf
 │       Sample file_1758052334.pdf
 │       Sample file_1758052352.pdf
+│       Sample file_1758055137.pdf
+│       Sample file_1758056325.pdf
+│       Sample file_1758120741.pdf
 │       Sample-file---Copy_1758025717.pdf
 │       Sample-file---Copy_1758025733.pdf
 │
 └───v
+        index.php
         vw.php

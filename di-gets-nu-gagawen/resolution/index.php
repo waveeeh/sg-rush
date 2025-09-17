@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Previous Resolutions | Sanggunian ng Bongabon</title>
+    <title>15th Resolutions | Sanggunian ng Bongabon</title>
     <link rel="icon" type="image/x-icon" href="../assets/icon.png" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,8 +38,8 @@
 <section class="py-12 bg-white">
     <div class="container mx-auto px-4">
         <div class="text-center max-w-3xl mx-auto mb-8">
-        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Previous Sangguniang Bayan</h2>
-            <h1 class="text-3xl md:text-4xl font-bold text-dark mb-4">RESOLUTIONS (2010-2022)</h1>
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">15th Sangguniang Bayan</h2>
+            <h1 class="text-3xl md:text-4xl font-bold text-dark mb-4">RESOLUTIONS</h1>
             <div class="h-1 w-20 bg-primary mx-auto mb-6"></div>
         </div>
     </div>
@@ -69,7 +69,7 @@ $limit = 10;
 $page_num = isset($_GET['p']) ? intval($_GET['p']) : 1;
 $offset = ($page_num - 1) * $limit;
 
-$subcategory_id = 6;
+$subcategory_id = 4;
 
 // Count total records in that subcategory
 $total_res = $conn->query("SELECT COUNT(*) as total FROM content WHERE subcategory_id = $subcategory_id");

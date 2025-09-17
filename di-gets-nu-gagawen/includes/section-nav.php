@@ -13,7 +13,7 @@
       </button>
       <!-- Dropdown -->
       <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md min-w-full text-gray-600 z-50">
-        <li><a href="../standingc/15thSB.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SB Standing Committees</a></li>
+        <li><a href="../standingc/index.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SB Standing Committees</a></li>
         <li><a href="../standingc/14thSB.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SB Standing Committees</a></li>
         <li><a href="../standingc/previous.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous SB Standing Committees</a></li>
       </ul>
@@ -26,7 +26,7 @@
         Regular Sessions
       </button>
       <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md min-w-full text-gray-600 z-50">
-        <li><a href="../regulars/15thSB.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SB Regular Sessions</a></li>
+        <li><a href="../regulars/index.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SB Regular Sessions</a></li>
         <li><a href="../regulars/14thSB.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SB Regular Sessions</a></li>
         <li><a href="../regulars/13thSB.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">13th SB Regular Sessions</a></li>
       </ul>
@@ -39,7 +39,7 @@
         Resolutions
       </button>
       <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md min-w-full text-gray-600 z-50">
-        <li><a href="../resolution/15thSB.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SB Resolutions</a></li>
+        <li><a href="../resolution/index.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SB Resolutions</a></li>
         <li><a href="../resolution/14thSB.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SB Resolutions</a></li>
         <li><a href="../resolution/previous.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous SB Resolutions (2010-2022)</a></li>
       </ul>
@@ -52,10 +52,10 @@
         Ordinances
       </button>
       <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md min-w-full text-gray-600 z-50">
-        <li><a href="../ordinance/15thSB.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SB Ordinances</a></li>
+        <li><a href="../ordinance/index.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SB Ordinances</a></li>
         <li><a href="../ordinance/14thSB.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SB Ordinances</a></li>
         <li><a href="../ordinance/13thSB.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">13th SB Ordinances</a></li>
-        <li><a href="../ordinance/previous.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous SB Ordinances (1948-12 SP)</a></li>
+        <li><a href="../ordinance/previous.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous SB Ordinances (1948-12 SB)</a></li>
       </ul>
     </li>
 

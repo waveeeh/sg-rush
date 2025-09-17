@@ -203,19 +203,20 @@ $preview_title = (count($words) > 20)
 // Original full subtitle
 $subtitle = $row['subtitle'];
 
-// Strip HTML tags (just in case) and split into words
-$words = explode(" ", strip_tags($subtitle));
+// Strip HTML tags (just in case)
+$clean_subtitle = strip_tags($subtitle);
 
-// Limit to 5 words, add ellipsis if needed
-$preview_subtitle = (count($words) > 20) 
-    ? implode(" ", array_slice($words, 0, 9)) . "..." 
-    : $subtitle;
+// Limit to 10 characters, add ellipsis if needed
+$preview_subtitle = (mb_strlen($clean_subtitle) > 10) 
+    ? mb_substr($clean_subtitle, 0, 20) . "..." 
+    : $clean_subtitle;
+
 ?>
 
                                 <p class="text-sm text-gray-600"><?= htmlspecialchars($preview_subtitle) ?></p>  
                             <p class="text-xs text-gray-500"><?= $row['category'] ?> → <?= $row['subcategory'] ?? "N/A" ?></p>
-                            <p class="text-xs text-gray-400"> Uploaded: <?= date("F j, Y", strtotime($row['created_at'])) ?> 
-                                <?php if ($row['updated_at'] && $row['updated_at'] != $row['created_at']): ?> | Updated: <?= date("F j, Y", strtotime($row['updated_at'])) ?> <?php endif; ?>
+                            <p class="text-xs text-gray-400"> Uploaded: <?= date("F j, Y g:i A", strtotime($row['created_at'])) ?> <br>
+                                <?php if ($row['updated_at'] && $row['updated_at'] != $row['created_at']): ?> Updated: <?= date("F j, Y g:i A", strtotime($row['updated_at'])) ?> <?php endif; ?>
                             </p>
                             <?php if ($row['pdf_path']): ?>
                             <a href="<?= $row['pdf_path'] ?>" target="_blank" class="text-blue-500 text-sm">View PDF</a>
@@ -231,11 +232,39 @@ $preview_subtitle = (count($words) > 20)
             </ul>
 
             <!-- Pagination -->
-            <div class="mt-4 flex gap-2 flex-wrap">
-                <?php for ($i=1; $i <= $totalPages; $i++): ?>
-                <a href="?page=<?= $i ?>&search=<?= urlencode($search) ?>" class="px-3 py-1 border rounded <?= $i==$page?'bg-blue-500 text-white':'' ?>"> <?= $i ?> </a>
-                <?php endfor; ?>
-            </div>
+          <div class="mt-4 flex gap-2 flex-wrap justify-center">
+    <?php
+    $limit = 5; // how many page numbers to show at once
+    $start = max(1, $page - floor($limit / 2));
+    $end = min($totalPages, $start + $limit - 1);
+
+    // Adjust start if we're at the end
+    if ($end - $start + 1 < $limit) {
+        $start = max(1, $end - $limit + 1);
+    }
+    ?>
+
+    <!-- Previous button -->
+    <?php if ($page > 1): ?>
+        <a href="?page=<?= $page - 1 ?>&search=<?= urlencode($search) ?>" class="px-3 py-1 border rounded">Prev</a>
+    <?php endif; ?>
+
+    <!-- Page numbers -->
+    <?php for ($i = $start; $i <= $end; $i++): ?>
+        <a href="?page=<?= $i ?>&search=<?= urlencode($search) ?>"
+           class="px-3 py-1 border rounded <?= $i == $page ? 'bg-blue-500 text-white' : '' ?>">
+            <?= $i ?>
+        </a>
+    <?php endfor; ?>
+
+    <!-- Next button -->
+    <?php if ($page < $totalPages): ?>
+        <a href="?page=<?= $page + 1 ?>&search=<?= urlencode($search) ?>" class="px-3 py-1 border rounded">Next</a>
+    <?php endif; ?>
+</div>
+
+
+
         </div>
 
     </div>

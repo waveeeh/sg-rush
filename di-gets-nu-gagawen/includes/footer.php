@@ -175,8 +175,8 @@
                     <ul class="space-y-3">
                         <li><a href="../landing.php" class="text-gray-400 hover:text-white">Home</a></li>
                         <li><a href="../about/" class="text-gray-400 hover:text-white">About Us</a></li>
-                        <li><a href="../ordinance/15thSB.php" class="text-gray-400 hover:text-white">Ordinances</a></li>
-                        <li><a href="../resolution/15thSB.php" class="text-gray-400 hover:text-white">Resolutions</a></li>
+                        <li><a href="../ordinance/index.php" class="text-gray-400 hover:text-white">Ordinances</a></li>
+                        <li><a href="../resolution/index.php" class="text-gray-400 hover:text-white">Resolutions</a></li>
                         <li><a href="#contact-info" class="text-gray-400 hover:text-white">Contact</a></li>
                     </ul>
                 </div>

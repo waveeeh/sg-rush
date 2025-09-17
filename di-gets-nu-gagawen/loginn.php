@@ -56,13 +56,13 @@ if (isset($_POST['login'])) {
 </head>
   <body class="h-screen flex items-center justify-center font-sans p-4 bg-cover bg-center bg-fixed" style="background-image: url('assets/bg.jpg');">
 
-  <div class="bg-white rounded-lg shadow-2xl flex flex-col md:flex-row w-full max-w-5xl mx-auto overflow-hidden">
+  <div class=" rounded-lg shadow-2xl flex flex-col md:flex-row w-full max-w-5xl mx-auto overflow-hidden">
     <div class="flex-1 p-8 md:p-12 flex items-center justify-center">
       <div class="w-full max-w-sm">
         <div class="text-center mb-6">
           <img src="assets/icon.png" alt="Company Logo" class="h-16 w-16 mx-auto md:hidden object-contain"/>
-          <h1 class="text-3xl font-bold text-gray-900 mt-4">Login</h1>
-          <p class="text-gray-600 mt-2">Access your admin panel</p>
+          <h1 class="text-4xl font-bold text-white mt-4">Login</h1>
+          <p class="text-white mt-2">Access your admin panel</p>
         </div>
 
         <?php if (!empty($error)): ?>
@@ -71,14 +71,14 @@ if (isset($_POST['login'])) {
 
         <form method="POST" action="">
           <div class="mb-4 relative">
-            <label for="username" class="block text-gray-700 text-sm font-semibold mb-2">Username</label>
+            <label for="username" class="block text-white text-sm mb-2">Username</label>
             <div class="relative">
               <i class="fas fa-user absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
               <input
                 type="text"
                 id="username"
                 name="username"
-                class="w-full pl-12 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full pl-12 pr-4 py-2  text-white bg-indigo-500/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your username"
                 required
               />
@@ -86,14 +86,14 @@ if (isset($_POST['login'])) {
           </div>
 
           <div class="mb-6 relative">
-            <label for="password" class="block text-gray-700 text-sm font-semibold mb-2">Password</label>
+            <label for="password" class="block text-white text-sm mb-2">Password</label>
             <div class="relative">
               <i class="fas fa-lock absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
               <input
                 type="password"
                 id="password"
                 name="password"
-                class="w-full pl-12 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              class="w-full pl-12 pr-4 py-2 text-white bg-indigo-500/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your password"
                 required
               />
@@ -110,8 +110,8 @@ if (isset($_POST['login'])) {
         </form>
       </div>
     </div>
-
-    <div class="hidden md:flex flex-1 items-center justify-center bg-gray-200 rounded-r-lg">
+    
+    <div class="hidden md:flex flex-1 items-center justify-center bg-gray-200/5 rounded-r-lg">
       <img src="assets/icon.png" alt="Company Logo" class="w-full h-full object-contain p-8"/>
     </div>
   </div>

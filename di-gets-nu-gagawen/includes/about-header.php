@@ -14,19 +14,19 @@
     <nav class="hidden md:flex items-center space-x-8">
       <a href="../landing.php" class="text-gray-600 hover:text-primary transition-colors">Home</a>
       <a href="index.php" class="text-primary font-medium">About the Sanggunian</a>
-      <a href="../proposed/index.php" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinance</a>
+      <a href="../proposed/index.php" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinances</a>
     </nav>
 
     <!-- Search + Mobile Toggle -->
     <div class="flex items-center space-x-4">
       <!-- Search (desktop only) -->
-      <div class="hidden md:flex items-center bg-gray-100 rounded-full px-3 py-1.5">
-        <input type="text" placeholder="Search..." 
+      <form action="../s/results.php" method="GET" class="hidden md:flex items-center bg-gray-100 rounded-full px-3 py-1.5">
+        <input type="text" name="q" placeholder="Search..." 
                class="bg-transparent border-none focus:outline-none focus:ring-0 w-36 lg:w-44">
         <button type="submit" class="text-gray-500 hover:text-primary">
           <i class="fas fa-search"></i>
         </button>
-      </div>
+      </form>
 
       <!-- Mobile Menu Button -->
       <button id="menu-btn" class="md:hidden text-gray-600">
@@ -57,13 +57,13 @@
 
   <!-- Search (mobile only) -->
   <div class="px-4 py-3 border-b">
-    <div class="flex items-center bg-gray-100 rounded-full px-3 py-1.5">
-      <input type="text" placeholder="Search..." 
+    <form action="../s/results.php" method="GET" class="flex items-center bg-gray-100 rounded-full px-3 py-1.5">
+      <input type="text" name="q" placeholder="Search..." 
              class="bg-transparent border-none focus:outline-none focus:ring-0 w-full">
       <button type="submit" class="text-gray-500 hover:text-primary">
         <i class="fas fa-search"></i>
       </button>
-    </div>
+    </form>
   </div>
 
   <!-- Navigation Links -->
