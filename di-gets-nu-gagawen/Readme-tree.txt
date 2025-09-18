@@ -2,9 +2,10 @@ di-gets-nu-gagawen
 │   dashboard.php
 │   db.php
 │   landing.php
-│   loginn.php
+│   login.php
 │   logout.php
 │   Readme-tree.txt
+│   register.php
 │   x_admin_dashboard.sql
 │
 ├───about
@@ -22,12 +23,16 @@ di-gets-nu-gagawen
 │       img2.jpg
 │       img3.jpg
 │
+├───govlinks
+│       index.php
+│
 ├───includes
 │       .htaccess
 │       about-header.php
 │       default-banner.php
 │       default-header.php
 │       footer.php
+│       home-footer.php
 │       home-header.php
 │       proposed-header.php
 │       section-nav.php

@@ -68,8 +68,8 @@
 
   <!-- Navigation Links -->
   <nav class="flex flex-col space-y-4 px-4 py-6 text-lg">
-    <a href="landing.php" class="text-gray-600 hover:text-primary transition-colors">Home</a>
-    <a href="" class="text-primary font-medium">About the Sanggunian</a>
+    <a href="landing.php" class="text-primary font-medium">Home</a>
+    <a href="about/" class="text-gray-600 hover:text-primary transition-colors">About the Sanggunian</a>
     <a href="proposed/" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinance</a>
   </nav>
 </div>

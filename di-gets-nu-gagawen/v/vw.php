@@ -57,10 +57,16 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             ?>
                 <!-- PDF Embed -->
                 <iframe src="../<?= htmlspecialchars($post['pdf_path']) ?>" 
-                        class="w-full h-[600px] border rounded my-4" 
-                        frameborder="0"></iframe>
-                <a href="../<?= htmlspecialchars($post['pdf_path']) ?>" target="_blank" 
-                   class="text-blue-500 underline block mt-2">📄 Open PDF in New Tab</a>
+        class="w-full h-[600px] border rounded my-4" 
+        frameborder="0"></iframe>
+     <div class="flex justify-center mt-4">
+    <a href="../<?= htmlspecialchars($post['pdf_path']) ?>" target="_blank"
+       class="inline-flex items-center px-4 py-2 font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition">
+       Open PDF in New Tab
+    </a>
+</div>
+
+
             <?php else: ?>
                 <!-- Image -->
                 <img src="../<?= htmlspecialchars($post['pdf_path']) ?>" 
@@ -69,13 +75,19 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             <?php endif; ?>
         <?php endif; ?>
 
-        <!-- Allow HTML links inside subtitle -->
-        <div class="prose max-w-none">
-            <?= $post['subtitle'] ?>
-        </div>
+     <?php if (!empty($post['subtitle'])): ?>
+    <div class="prose max-w-none p-2">
+    <?= nl2br(htmlspecialchars($post['subtitle'])) ?>
+</div>
+<?php endif; ?>
 
-        <small class="text-gray-500 block mt-4">
-            <?= date("F j, Y g:i A", strtotime($post['created_at'])) ?>
+
+        <small class="text-gray-500 block mt-2">
+        <?php if (!empty($post['updated_at'])): ?>
+            Updated: <?= date("F j, Y g:i A", strtotime($post['updated_at'])) ?>
+        <?php else: ?>
+            Uploaded: <?= date("F j, Y g:i A", strtotime($post['created_at'])) ?>
+        <?php endif; ?>
         </small>
 
     <?php else: ?>

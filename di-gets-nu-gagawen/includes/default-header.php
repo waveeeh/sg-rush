@@ -12,8 +12,8 @@
     <!-- Desktop Nav -->
     <nav class="hidden md:flex items-center space-x-8">
       <a href="../landing.php" class="text-gray-600 hover:text-primary transition-colors">Home</a>
-      <a href="../about/index.php" class="text-gray-600 hover:text-primary transition-colors">About the Sanggunian</a>
-      <a href="../proposed/index.php" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinances</a>
+      <a href="../about/" class="text-gray-600 hover:text-primary transition-colors">About the Sanggunian</a>
+      <a href="../proposed/" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinances</a>
     </nav>
 
     <!-- Search + Mobile Toggle -->
@@ -67,7 +67,7 @@
   <!-- Navigation Links -->
   <nav class="flex flex-col space-y-4 px-4 py-6 text-lg">
     <a href="../landing.php" class="text-gray-600 hover:text-primary transition-colors">Home</a>
-    <a href="../about/index.php" class="text-gray-600 hover:text-primary transition-colors">About the Sanggunian</a>
-    <a href="../proposed/index.php" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinance</a>
+    <a href="../about/" class="text-gray-600 hover:text-primary transition-colors">About the Sanggunian</a>
+    <a href="../proposed/" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinance</a>
   </nav>
 </div>

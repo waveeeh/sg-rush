@@ -173,10 +173,10 @@
                 <div>
                     <h3 class="text-xl font-bold mb-6">Quick Links</h3>
                     <ul class="space-y-3">
-                        <li><a href="../landing.php" class="text-gray-400 hover:text-white">Home</a></li>
-                        <li><a href="../about/" class="text-gray-400 hover:text-white">About Us</a></li>
-                        <li><a href="../ordinance/" class="text-gray-400 hover:text-white">Ordinances</a></li>
-                        <li><a href="../resolution/" class="text-gray-400 hover:text-white">Resolutions</a></li>
+                        <li><a href="" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about/" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="ordinance/index.php" class="text-gray-400 hover:text-white">Ordinances</a></li>
+                        <li><a href="resolution/index.php" class="text-gray-400 hover:text-white">Resolutions</a></li>
                         <li><a href="#contact-info" class="text-gray-400 hover:text-white">Contact</a></li>
                     </ul>
                 </div>
@@ -188,8 +188,8 @@
                     <ul class="space-y-3">
                         <li><a href="#" class="hidden text-gray-400 hover:text-white">Publications</a></li>
                         <li><a href="#" class="hidden text-gray-400 hover:text-white">News & Updates</a></li>
-                        <li><a href="../govlinks/" class="text-gray-400 hover:text-white">Government Links</a></li>
-                        <li><a href="../s/results.php" class="text-gray-400 hover:text-white">Downloadable Forms</a></li>
+                        <li><a href="govlinks/" class="text-gray-400 hover:text-white">Government Links</a></li>
+                        <li><a href="s/results.php" class="text-gray-400 hover:text-white">Downloadable Forms</a></li>
                     </ul>
                 </div>
                 

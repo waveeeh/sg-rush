@@ -3,14 +3,14 @@ session_start();
 
 // Prevent access if not logged in
 if (!isset($_SESSION['admin'])) {
-    header("Location: loginn.php");
+    header("Location: login.php");
     exit;
 }
 
 // -------- AUTH / LOGOUT --------
 if (isset($_GET['logout'])) {
     session_destroy();
-    header("Location: loginn.php");
+    header("Location: login.php");
     exit;
 }
 

@@ -1,4 +1,4 @@
-  <?php
+<?php
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -13,33 +13,40 @@ include "db.php";
 
 $error = "";
 
-// Handle login (not final. aayusin pa ito sa security nito)
 if (isset($_POST['login'])) {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $pepper   = "MY_SECRET_PEPPER_ACHUCHU"; // keep secret in config, not DB 
+    $username = $_POST['username'] ?? '';
+    $password = $_POST['password'] ?? '';
 
-    $stmt = $conn->prepare("SELECT password, salt FROM admins WHERE username = ?");
-    $stmt->bind_param("s", $username);
-    $stmt->execute();
-    $stmt->store_result();
+    // Sanitize & validate username (case-sensitive, 5-20 letters/numbers only)
+    $username = trim($username);
+    if (!preg_match('/^[a-zA-Z0-9_]{5,20}$/', $username)) {
+        $error = "Invalid username format. Use 5–20 letters and numbers only.";
+    } else {
+        // Recreate mixture with submitted password
+        $pepper = "Qk9QShG44EeM3sNxQ1qvKFRFR";
+        $mixture = $pepper . $password . $pepper;
 
-    if ($stmt->num_rows > 0) {
-        $stmt->bind_result($storedHash, $salt);
-        $stmt->fetch();
+        // Query DB
+        $stmt = $conn->prepare("SELECT password FROM admins WHERE username = ?");
+        $stmt->bind_param("s", $username);
+        $stmt->execute();
+        $stmt->store_result();
 
-        $innerHash = hash("sha256", $password . $pepper);
-        $checkHash = hash("sha256", $salt . $innerHash);
+        if ($stmt->num_rows > 0) {
+            $stmt->bind_result($storedHash);
+            $stmt->fetch();
 
-        if (hash_equals($storedHash, $checkHash)) {
-            $_SESSION['admin'] = $username;
-            header("Location: dashboard.php");
-            exit;
+            // Verify mixture against stored hash
+            if (password_verify($mixture, $storedHash)) {
+                $_SESSION['admin'] = $username;
+                header("Location: dashboard.php");
+                exit;
+            } else {
+                $error = "Invalid credentials";
+            }
         } else {
             $error = "Invalid credentials";
         }
-    } else {
-        $error = "Invalid credentials";
     }
 }
 ?>
@@ -53,10 +60,22 @@ if (isset($_POST['login'])) {
   <link rel="icon" type="image/x-icon" href="assets/icon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <script>
+    // Block invalid characters in username (only letters & numbers)
+    function validateUsernameInput(event) {
+      const regex = /^[a-zA-Z0-9_]$/;
+      const key = String.fromCharCode(event.which);
+      if (!regex.test(key)) {
+        event.preventDefault();
+        return false;
+      }
+      return true;
+    }
+  </script>
 </head>
-  <body class="h-screen flex items-center justify-center font-sans p-4 bg-cover bg-center bg-fixed" style="background-image: url('assets/bg.jpg');">
+<body class="h-screen flex items-center justify-center font-sans p-4 bg-cover bg-center bg-fixed" style="background-image: url('assets/bg.jpg');">
 
-  <div class=" rounded-lg shadow-2xl flex flex-col md:flex-row w-full max-w-5xl mx-auto overflow-hidden">
+  <div class="rounded-lg shadow-2xl flex flex-col md:flex-row w-full max-w-5xl mx-auto overflow-hidden">
     <div class="flex-1 p-8 md:p-12 flex items-center justify-center">
       <div class="w-full max-w-sm">
         <div class="text-center mb-6">
@@ -78,9 +97,13 @@ if (isset($_POST['login'])) {
                 type="text"
                 id="username"
                 name="username"
-                class="w-full pl-12 pr-4 py-2  text-white bg-indigo-500/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full pl-12 pr-4 py-2 text-white bg-indigo-500/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your username"
+                pattern="^[a-zA-Z0-9_]{5,20}$"
+                minlength="5"
+                maxlength="20"
                 required
+                onkeypress="return validateUsernameInput(event)"
               />
             </div>
           </div>
@@ -93,7 +116,7 @@ if (isset($_POST['login'])) {
                 type="password"
                 id="password"
                 name="password"
-              class="w-full pl-12 pr-4 py-2 text-white bg-indigo-500/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="w-full pl-12 pr-4 py-2 text-white bg-indigo-500/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your password"
                 required
               />
@@ -107,6 +130,9 @@ if (isset($_POST['login'])) {
           >
             Login
           </button>
+           <p class="text-white text-center mt-4">
+            <a href="register.php" class="text-blue-400 hover:underline">Register Account</a>
+          </p>
         </form>
       </div>
     </div>

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 17, 2025 at 11:53 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Generation Time: Sep 18, 2025 at 03:25 PM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -29,17 +29,17 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `admins` (
   `id` int(11) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` char(64) NOT NULL,
-  `salt` char(36) NOT NULL
+  `username` varchar(24) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `admins`
 --
 
-INSERT INTO `admins` (`id`, `username`, `password`, `salt`) VALUES
-(1, 'Admin_XYZ', '805d4fc4381c68c87df4e75df028fb3362aabbc0319370fae41e35d54d8dcbee', '123e4567-e89b-12d3-a456-426614174000');
+INSERT INTO `admins` (`id`, `username`, `password`, `created_at`) VALUES
+(1, 'Administrator', '$2y$10$uA.P3rXJ8QFFRn/BWbxLmuW/FWL/CRwBZ56QFUrtXMn7c3Wvd9oXe', '2025-09-18 12:27:56');
 
 -- --------------------------------------------------------
 
@@ -101,7 +101,7 @@ INSERT INTO `content` (`id`, `category_id`, `subcategory_id`, `title`, `subtitle
 (27, 3, 8, 'aweg aewg awe g', 'w egaw eg', 'uploads/Sample-file---Copy_1758025733.pdf', '2025-09-16 12:28:53', NULL),
 (28, 2, 5, 'a fawf aw faw', '', 'uploads/Sample file_1758027080.pdf', '2025-09-16 12:30:04', '2025-09-16 12:51:20'),
 (31, 1, 1, 'malupet', '', 'uploads/Sample file_1758039634.pdf', '2025-09-16 16:20:34', NULL),
-(32, 1, 1, 'wat ef maraming words', 'longger <b> Lorem </b> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor ilongger <b> Lorem </b> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor ilongger <b> Lorem </b> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i', 'uploads/Sample file_1758039712.pdf', '2025-09-16 16:21:52', '2025-09-17 17:26:48'),
+(32, 1, 1, 'wat ef maraming words - update', 'longger <b> Lorem </b> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor ilongger <b> Lorem </b> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor ilongger \r\n\r\n   <b> Lorem </b> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco \r\n\r\nspace ---- laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure doud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i\r\n1\r\n\r\n-/new line\r\n1\r\n2\r\n\r\n\r\n/new line', 'uploads/Sample file_1758039712.pdf', '2025-09-16 16:21:52', '2025-09-18 13:19:10'),
 (33, 1, 1, 'walng subtitle pero mahang title aa eb eber brfsvervr baebb ;ij hwie e awbv we wev az vd vferb aervzdfvc zb ;ij hwie e awbv we wev az vd vferb aervzdfvc z', '', 'uploads/Sample file_1758039904.pdf', '2025-09-16 16:25:04', NULL),
 (34, 1, 1, 'short vr', 'make it short', 'uploads/Sample file_1758040453.pdf', '2025-09-16 16:34:13', '2025-09-16 16:36:38'),
 (35, 3, 9, 'afasfafijp pjv', '', NULL, '2025-09-16 19:41:32', NULL),
@@ -181,7 +181,9 @@ INSERT INTO `subcategories` (`id`, `category_id`, `name`) VALUES
 -- Indexes for table `admins`
 --
 ALTER TABLE `admins`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`),
+  ADD UNIQUE KEY `username_2` (`username`);
 
 --
 -- Indexes for table `categories`
@@ -212,7 +214,7 @@ ALTER TABLE `subcategories`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `categories`
