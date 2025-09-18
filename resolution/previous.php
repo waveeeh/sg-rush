@@ -1,9 +1,12 @@
+<?php include "../db.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanggunian ng Bongabon</title>
+    <title> Previous Resolutions | Sanggunian ng Bongabon</title>
+    <link rel="icon" type="image/x-icon" href="../assets/icon.png" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
@@ -24,291 +27,272 @@
             }
         }
     </script>
-
 </head>
 <body class="bg-gray-100">
 
-    <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="landing.php" class="flex items-center space-x-2">
-                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
-                </div>
-                <span class="text-xl font-bold text-dark">SP Bongabon</span>
-            </a>
-            
-            <nav class="hidden md:flex items-center space-x-8">
-                <a href="landing.php" class="text-primary font-medium">SP Home</a>
-                <a href="about/index.php" class="text-gray-600 hover:text-primary transition-colors">About the Sanggunian</a>
-                <a href="../sg/proposed/index.php" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinance</a>
-            </nav>
-            
-            <div class="flex items-center space-x-4">
-                <div class="hidden md:flex items-center bg-gray-100 rounded-full px-3 py-1.5">
-                    <input type="text" placeholder="Search..." class="bg-transparent border-none focus:outline-none focus:ring-0 w-36 lg:w-44">
-                    <button type="submit" class="text-gray-500 hover:text-primary">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-                
-                <button class="md:hidden text-gray-600">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
-            </div>
-        </div>
-    </header>
+<?php include "../includes/default-header.php" ?>
+<?php include "../includes/default-banner.php" ?>
+<?php include "../includes/section-nav.php"; ?>
 
-    <!--Hero Section 2-->
-    <div class="relative z-10 w-full px-4 py-16 md:px-8 bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://cdn.fastpixel.io/fp/ret_img+v_5b0f+w_794+h_447+q_glossy+to_webp/nebmci.org/wp-content/uploads/2021/05/bongabon-3.png');">
-        <div class="max-w-screen-xl mx-auto">
-            <div class="space-y-5 max-w-4xl mx-auto text-center">
-                <h2 class="text-4xl text-gray-800 font-extrabold mx-auto md:text-5xl">
-                    SANGGUNIANG PANLUNGSOD NG BONGABON    
-                </h2>
-                <p class="max-w-2xl mx-auto text-gray-600">
-                    Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
-                    doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-                </p>
-            </div>
-        </div>           
+<!--Content-->
+<section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Previous Sangguniang Bayan</h2>
+            <h1 class="text-3xl md:text-4xl font-bold text-dark mb-4">RESOLUTIONS (2010-2022)</h1>
+            <div class="h-1 w-20 bg-primary mx-auto mb-6"></div>
+        </div>
     </div>
 
-    <!-- Section Nav -->
-    <div class="border-b border-gray-200 bg-white dark:border-gray-700">
-        <ul class="flex justify-center text-base font-medium text-center space-x-6 text-gray-600" id="default-tab" role="tablist">
+    <!-- Search -->
+    <div class="container mx-auto px-4 max-w-3xl">
+    <form id="search-form" class="relative">
+      <input type="search" id="search-input" name="query"
+             class="w-full p-4 ps-12 border border-gray-300 rounded-full focus:ring-blue-500 focus:border-blue-500"
+             placeholder="Search here..." autocomplete="off" required>
+      <button type="submit" class="absolute end-2.5 top-2.5 bg-blue-700 hover:bg-blue-800 text-white rounded-full px-5 py-2">
+        Search
+      </button>
+    </form>
 
-            <!-- Standing Committees -->
-            <li class="relative group" role="presentation">
-                <button class="inline-block px-4 py-3 border-b-2 border-transparent rounded-t-lg hover:text-blue-600 hover:border-blue-600" 
-                        id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
-                    Standing Committees
-                </button>
-                <!-- Dropdown -->
-                <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md w-40 text-gray-600">
-                    <li><a href="../standingc/15thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP</a></li>
-                    <li><a href="../standingc/14thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP</a></li>
-                    <li><a href="../standingc/previous.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous SP</a></li>
-                </ul>
-            </li>
+<div id="search-results" class="mt-2 space-y-4 max-h-96 overflow-y-auto"></div>
+<p id="results-count" class="text-gray-600 mt-2 hidden"></p>
 
-            <!-- Regular Sessions -->
-            <li class="relative group" role="presentation">
-                <button class="inline-block px-4 py-3 border-b-2 border-transparent rounded-t-lg hover:text-blue-600 hover:border-blue-600" 
-                        id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">
-                    Regular Sessions
-                </button>
-                <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md w-40 text-gray-600">
-                    <li><a href="../regulars/15thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP Agenda</a></li>
-                    <li><a href="../regulars/14thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP Agenda</a></li>
-                    <li><a href="../regulars/13thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">13th SP Agenda</a></li>
-                </ul>
-            </li>
+  </div>
+</section>
 
-            <!-- Resolution -->
-            <li class="relative group" role="presentation">
-                <button class="inline-block px-4 py-3 border-b-2 border-transparent rounded-t-lg hover:text-blue-600 hover:border-blue-600" 
-                        id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">
-                    Resolutions
-                </button>
-                <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md w-40 text-gray-600">
-                    <li><a href="../resolution/15thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th SP Resolutions</a></li>
-                    <li><a href="../resolution/14thSP.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th SP Resolutions</a></li>
-                    <li><a href="../resolution/previous.php" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous Resolutions (2010-2022)</a></li>
-                </ul>
-            </li>
+<section class="text-gray-600 bg-white body-font overflow-hidden">
 
-            <!-- Ordinances -->
-            <li class="relative group" role="presentation">
-                <button class="inline-block px-4 py-3 border-b-2 border-transparent rounded-t-lg hover:text-blue-600 hover:border-blue-600" 
-                        id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">
-                    Ordinances
-                </button>
-                <ul class="absolute left-0 hidden group-hover:block bg-white border rounded-lg shadow-md w-40 text-gray-600">
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">15th Ordinances</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">14th Ordinances</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">13th Ordinances</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:text-blue-600 hover:bg-blue-50">Previous Ordinances (1948-12 SP)</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+<?php
+// Pagination setup
+$limit = 10;
+$page_num = isset($_GET['p']) ? intval($_GET['p']) : 1;
+$offset = ($page_num - 1) * $limit;
 
-    <!--Content-->
-    <section class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-8">
-                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Previous Resolution</h2>
-                <div class="h-1 w-20 bg-primary mx-auto mb-6"></div>
-            </div>
-        </div>
-    </section>
+$subcategory_id = 6;
 
-    <!-- lagay ng search button kaso saan hahaha naka sticky header redundant-->
+// Count total records in that subcategory
+$total_res = $conn->query("SELECT COUNT(*) as total FROM content WHERE subcategory_id = $subcategory_id");
+$total = $total_res->fetch_assoc()['total'];
+$total_pages = ceil($total / $limit);
 
-    <!-- Pili ka ano mas maganda -->
-    <section class="text-gray-600 bg-white body-font overflow-hidden">
-        <div class="container px-5 py-2 mx-auto">
-            <div class="-my-8 divide-y-2 divide-gray-100">
-                <div class="bg-light rounded-xl p-6 hover:shadow-md transition-shadow">
-                    <div class="py-8 flex flex-wrap md:flex-nowrap">
-                        <div class="md:flex-grow">
-                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-                            <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                            <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+// Fetch paginated data for session cards
+$res = $conn->query("SELECT * FROM content 
+                     WHERE subcategory_id = $subcategory_id 
+                     ORDER BY created_at DESC 
+                     LIMIT $limit OFFSET $offset");
 
-    <!--Contact Section-->
-    <main class="py-8 bg-white" x-data="contactComponent()">
-        <div class="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
-            <div class="max-w-xl space-y-3">
-                <h3 class="text-indigo-600 font-semibold">
-                    Contact
-                </h3>
-                <p class="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                    Let us know how we can help
-                </p>
-                <p>
-                    We're here to help and answer any question you might have, We look forward to hearing from you.
-                </p>
-            </div>
-            <div>
-                <ul class="mt-12 flex flex-wrap gap-x-12 gap-y-6 items-center lg:gap-x-24">
-                    <template x-for="(item, idx) in contactMethods" :key="idx">
-                        <li>
-                            <h4 class="text-gray-800 text-lg font-medium" x-text="item.title"></h4>
-                            <div class="mt-3 flex items-center gap-x-3">
-                                <div class="flex-none text-gray-400" x-html="item.icon"></div>
-                                <p x-text="item.contact"></p>
-                            </div>
-                        </li>
-                    </template>
-                </ul>
-            </div>
-        </div>
-    </main>
+$rows = [];
+while($row = $res->fetch_assoc()) {
+    $rows[] = $row;
+}
 
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-    <script>
-    function contactComponent() {
-        return {
-            contactMethods: [
-                {
-                    icon: `
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                        </svg>
-                    `,
-                    contact: "Mountain View, California, United State.",
-                    title: "Our office"
-                },
-                {
-                    icon: `
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                        </svg>
-                    `,
-                    contact: "+1 (555) 000-000",
-                    title: "Phone"
-                },
-                {
-                    icon: `
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                        </svg>
-                    `,
-                    contact: "Support@example.com",
-                    title: "Email"
-                },
-            ]
-        }
-    }
-    </script>
+// Display session cards
+foreach ($rows as $row):
+?>
+  <div class="bg-gray-100 shadow p-4 rounded mb-5 mx-10">
+    <h2 class="text-xl font-bold"><?= htmlspecialchars($row['title']) ?></h2>
+    <?php if (!empty($row['subtitle'])): ?>
+        <h3 class="text-md text-gray-700 italic mb-2">  <?= htmlspecialchars(mb_strimwidth($row['subtitle'], 0, 300, "...")) ?></h3>
+    <?php endif; ?>
 
+    <a href="../v/vw.php?id=<?= $row['id'] ?>" class="text-blue-500">Read More</a>
+
+ <small class="text-gray-500 block mt-2">
+    <?php if (!empty($row['updated_at'])): ?>
+        Updated: <?= date("F j, Y g:i A", strtotime($row['updated_at'])) ?>
+    <?php else: ?>
+        Uploaded: <?= date("F j, Y g:i A", strtotime($row['created_at'])) ?>
+    <?php endif; ?>
+</small>
     
-   
+  </div>
+<?php endforeach; ?>
 
+<!-- Pagination -->
+<div class="mt-6 flex gap-2 flex-wrap justify-center">
+    <?php
+    $limit = 5; // how many page numbers to show at once
+    $start = max(1, $page_num - floor($limit / 2));
+    $end = min($total_pages, $start + $limit - 1);
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white pt-10 pb-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-                <div>
-                    <h3 class="text-xl font-bold mb-6">SP Bongabon</h3>
-                    <p class="text-gray-400 mb-6">The Sangguniang Panlungsod of Bongabon is committed to serving the community through effective legislation and governance.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-bold mb-6">Quick Links</h3>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Ordinances</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Resolutions</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-bold mb-6">Resources</h3>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Publications</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">News & Updates</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Government Links</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Downloadable Forms</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-bold mb-6">Contact Info</h3>
-                    <ul class="space-y-3 text-gray-400">
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
-                            <span>Municipal Hall Building, Bongabon, Nueva Ecija</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-phone mt-1 mr-3"></i>
-                            <span>(044) 123-4567</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-envelope mt-1 mr-3"></i>
-                            <span>sanggunian@bongabon.gov.ph</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 text-center text-gray-400">
-                <p>&copy; 2023 Sangguniang Panlungsod ng Bongabon. All rights reserved.</p>
-            </div>
+    // Adjust start if we're at the end
+    if ($end - $start + 1 < $limit) {
+        $start = max(1, $end - $limit + 1);
+    }
+    ?>
+
+    <!-- Previous button -->
+    <?php if ($page_num > 1): ?>
+        <a href="?p=<?= $page_num - 1 ?>" class="px-3 py-2 bg-gray-200 rounded">Previous</a>
+    <?php endif; ?>
+
+    <!-- Page numbers -->
+    <?php for ($i = $start; $i <= $end; $i++): ?>
+        <a href="?p=<?= $i ?>"
+           class="px-3 py-2 border rounded <?= $i == $page_num ? 'bg-blue-500 text-white' : 'bg-gray-200' ?>">
+            <?= $i ?>
+        </a>
+    <?php endfor; ?>
+
+    <!-- Next button -->
+    <?php if ($page_num < $total_pages): ?>
+        <a href="?p=<?= $page_num + 1 ?>" class="px-3 py-2 bg-gray-200 rounded">Next</a>
+    <?php endif; ?>
+</div>
+
+</section>
+
+<?php // 🔹 Fetch ALL records with PDFs (no pagination)
+$pdf_res = $conn->query("SELECT id, title, pdf_path 
+                         FROM content 
+                         WHERE subcategory_id = $subcategory_id 
+                         AND pdf_path IS NOT NULL 
+                         ORDER BY created_at DESC");
+
+$pdf_rows = [];
+while($row = $pdf_res->fetch_assoc()) {
+    $pdf_rows[] = $row;
+} ?>
+
+<section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-dark mb-4">DOWNLOAD (PDF)</h1>
+            <div class="h-1 w-20 bg-primary mx-auto mb-6"></div>
+
+    <?php if (!empty($pdf_rows)): ?>
+    <ul class="space-y-2 text-gray-700 text-left">
+        <?php foreach ($pdf_rows as $row): ?>
+            <li class="flex items-start">
+                <span class="mt-1 mr-2 h-2 w-2 rounded-full bg-gray-500 flex-shrink-0"></span>
+                <a href="../<?= $row['pdf_path'] ?>" download 
+                   class="text-blue-600 hover:underline break-words">
+                    <?= htmlspecialchars($row['title']) ?>
+                </a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+<?php else: ?>
+    <p class="text-gray-500 italic">No PDF available at the moment.</p>
+<?php endif; ?>
+
         </div>
-    </footer>
+    </div>
+</section>
+
+<?php include "../includes/footer.php"; ?>
+
+<script>
+// Mobile menu
+const menuBtn = document.getElementById("menu-btn");
+const closeBtn = document.getElementById("close-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => { mobileMenu.classList.remove("hidden"); });
+closeBtn.addEventListener("click", () => { mobileMenu.classList.add("hidden"); });
+
+
+// helper function to format date
+function formatDate(dateStr) {
+    const d = new Date(dateStr);
+    const options = { month: 'short', day: 'numeric', year: 'numeric' };
+    let datePart = d.toLocaleDateString('en-US', options);
+
+    let hours = d.getHours() % 12 || 12; // 12-hour format
+    let minutes = d.getMinutes().toString().padStart(2, '0');
+    let ampm = d.getHours() >= 12 ? 'PM' : 'AM';
+
+    return `${datePart} ${hours}:${minutes} ${ampm}`;
+}
+
+// AJAX Search
+const form = document.getElementById('search-form');
+const input = document.getElementById('search-input');
+const resultsBox = document.getElementById('search-results');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const query = input.value.trim();
+    if (!query) {
+        resultsBox.innerHTML = ''; // clear results if input is empty
+        return;
+    }
+
+// Detect subcategory depending on page filename
+let currentPage = window.location.pathname.split("/").pop();
+let subcategoryId = 1; // default
+
+if (currentPage === "index.php") subcategoryId = 4;
+else if (currentPage === "14thSB.php") subcategoryId = 5;
+else if (currentPage === "13thSB.php") subcategoryId = 6;
+else if (currentPage === "previous.php") subcategoryId = 6;
+
+fetch('search.php?query=' + encodeURIComponent(query) + '&subcategory_id=' + subcategoryId)
+
+    .then(res => res.json())
+    .then(data => {
+        resultsBox.innerHTML = '';
+        const resultsCount = document.getElementById('results-count');
+
+        if (data.length === 0) {
+            resultsBox.innerHTML = '<p class="text-gray-500">No results found.</p>';
+            resultsCount.textContent = '';
+            resultsCount.classList.add('hidden');
+            resultsBox.classList.remove('border-2', 'border-gray-200'); // remove border
+            return;
+        }
+
+        // Show total results + add border
+        resultsCount.textContent = `Total results: ${data.length}`;
+        resultsCount.classList.remove('hidden');
+        resultsBox.classList.add('border-2', 'border-gray-200'); // add border
+
+        data.forEach(item => {
+    const div = document.createElement('div');
+    div.classList.add('p-4', 'bg-gray-100', 'rounded', 'shadow', "m-2");
+
+    // truncate title (100 chars)
+    const truncatedTitle = item.title.length > 100 
+        ? item.title.substring(0, 100) + "..." 
+        : item.title;
+
+    // truncate subtitle (150 chars) only if it exists
+    const truncatedSubtitle = item.subtitle && item.subtitle.length > 150 
+        ? item.subtitle.substring(0, 150) + "..." 
+        : item.subtitle || '';
+
+    div.innerHTML = `
+        <h2 class="text-xl font-bold text-gray-600">${truncatedTitle}</h2>
+        ${truncatedSubtitle ? `<h3 class="text-gray-700 italic">${truncatedSubtitle}</h3>` : ''}
+        <a href="../v/vw.php?id=${item.id}" class="text-blue-500">Read More</a>
+     <small class="block text-gray-500 mt-2">
+    ${item.updated_at 
+        ? 'Updated: ' + formatDate(item.updated_at) 
+        : 'Uploaded: ' + formatDate(item.created_at)}
+</small>
+    `;
+    resultsBox.appendChild(div);
+});
+
+    });
+
+
+
+});
+
+// Clear results as user clears input
+input.addEventListener('input', function() {
+    const resultsCount = document.getElementById('results-count');
+    if (input.value.trim() === '') {
+        resultsBox.innerHTML = '';
+        resultsCount.textContent = '';
+        resultsCount.classList.add('hidden');
+        resultsBox.classList.remove('border-2', 'border-gray-200'); // remove border when cleared
+    }
+});
+
+</script>
+
 </body>
 </html>

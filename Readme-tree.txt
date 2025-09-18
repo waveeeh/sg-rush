@@ -1,4 +1,4 @@
-di-gets-nu-gagawen
+sg-rush:
 │   dashboard.php
 │   db.php
 │   landing.php
