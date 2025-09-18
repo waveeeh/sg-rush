@@ -181,6 +181,7 @@
                     </ul>
                 </div>
                 
+                <!-- syempre wala pa ito -->
                 <div>
                     <h3 class="text-xl font-bold mb-6">Resources</h3>
                     <ul class="space-y-3">

@@ -1,5 +1,3 @@
-<?php include "../db.php"; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,61 +32,20 @@
 <?php include "../includes/default-banner.php" ?>
 <?php include "../includes/section-nav.php"; ?>
 
-<?php
-$post = null;
 
-if (isset($_GET['id']) && is_numeric($_GET['id'])) {
-    $id = intval($_GET['id']);
-    $res = $conn->query("SELECT * FROM content WHERE id = $id");
-    if ($res && $res->num_rows > 0) {
-        $post = $res->fetch_assoc();
-    }
-}
-?>
-
-<div class="bg-white shadow p-6 rounded max-w-4xl mx-4 sm:mx-6 lg:mx-auto my-10">
-    <?php if ($post): ?>
-        <h1 class="text-2xl font-bold mb-4"><?= htmlspecialchars($post['title']) ?></h1>
-
-        <?php if (!empty($post['pdf_path'])): ?>
-            <?php 
-                $ext = strtolower(pathinfo($post['pdf_path'], PATHINFO_EXTENSION)); 
-                if ($ext === "pdf"): 
-            ?>
-                <!-- PDF Embed -->
-                <iframe src="../<?= htmlspecialchars($post['pdf_path']) ?>" 
-                        class="w-full h-[600px] border rounded my-4" 
-                        frameborder="0"></iframe>
-                <a href="../<?= htmlspecialchars($post['pdf_path']) ?>" target="_blank" 
-                   class="text-blue-500 underline block mt-2">📄 Open PDF in New Tab</a>
-            <?php else: ?>
-                <!-- Image -->
-                <img src="../<?= htmlspecialchars($post['pdf_path']) ?>" 
-                     alt="Post File" 
-                     class="w-full h-64 object-cover rounded my-2">
-            <?php endif; ?>
-        <?php endif; ?>
-
-        <!-- Allow HTML links inside subtitle -->
-        <div class="prose max-w-none">
-            <?= $post['subtitle'] ?>
-        </div>
-
-        <small class="text-gray-500 block mt-4">
-            <?= date("F j, Y g:i A", strtotime($post['created_at'])) ?>
-        </small>
-
-    <?php else: ?>
+<div class="bg-white shadow p-6 rounded max-w-4xl mx-auto my-10">
+   
         <!-- Error Message -->
         <div class="text-center py-20">
             <i class="fa-solid fa-triangle-exclamation text-red-500 text-5xl mb-4"></i>
-            <h2 class="text-2xl font-semibold mb-2">Unavailable Content</h2>
-            <p class="text-gray-600">The content you’re looking for doesn’t exist or is no longer available.</p>
+            <h2 class="text-2xl font-semibold mb-2">403 Forbidden</h2>
+            <p class="text-gray-600">You don’t have permission to access this resource.</p>
             <a href="../landing.php" class="mt-4 inline-block px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
                 Back to Home
             </a>
         </div>
-    <?php endif; ?>
+
+
 </div>
 
 <?php include "../includes/footer.php"; ?>
@@ -107,6 +64,7 @@ closeBtn.addEventListener("click", () => {
   mobileMenu.classList.add("hidden");
 });
 </script>
+
 
 </body>
 </html>

@@ -17,6 +17,10 @@ di-gets-nu-gagawen
 │       .htaccess
 │       bg.jpg
 │       icon.png
+│       img0.jpg
+│       img1.jpg
+│       img2.jpg
+│       img3.jpg
 │
 ├───includes
 │       .htaccess
@@ -31,6 +35,7 @@ di-gets-nu-gagawen
 ├───ordinance
 │       13thSB.php
 │       14thSB.php
+│       15thSB.php
 │       index.php
 │       previous.php
 │       search.php
@@ -42,11 +47,13 @@ di-gets-nu-gagawen
 ├───regulars
 │       13thSB.php
 │       14thSB.php
+│       15thSB.php
 │       index.php
 │       search.php
 │
 ├───resolution
 │       14thSB.php
+│       15thSB.php
 │       index.php
 │       previous.php
 │       search.php
@@ -57,6 +64,7 @@ di-gets-nu-gagawen
 │
 ├───standingc
 │       14thSB.php
+│       15thSB.php
 │       index.php
 │       previous.php
 │
@@ -64,6 +72,7 @@ di-gets-nu-gagawen
 │       1758020049_Sample file.pdf
 │       1758020072_Sample file.pdf
 │       1758025017_Sample file.pdf
+│       index.php
 │       Sample file - Copy_1758025804.pdf
 │       Sample file.pdf
 │       Sample file_1758027080.pdf

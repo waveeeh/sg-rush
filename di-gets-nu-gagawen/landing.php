@@ -32,44 +32,6 @@
 
 <?php include "includes/home-header.php" ?>
 
-<!-- Fullscreen Mobile Menu (overlay) -->
-<div id="mobile-menu" class="fixed inset-0 bg-white hidden z-50 flex flex-col">
-  <!-- Top bar inside overlay -->
-  <div class="flex justify-between items-center px-4 py-3 border-b">
-    <!-- Close button on right -->
-    <button id="close-btn" class="ml-auto text-gray-600">
-      <i class="fas fa-times text-2xl"></i>
-    </button>
-  </div>
-
-  <!-- Centered Logo inside mobile menu -->
-  <div class="flex flex-col items-center justify-center py-6 border-b">
-    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
-   <img src="assets/icon.png" alt="Sangguniang Bayan Logo" class="rounded-full" />
-
-    </div>
-    <span class="mt-3 text-2xl font-bold text-dark">SB Bongabon</span>
-  </div>
-
-  <!-- Search (mobile only) -->
-  <div class="px-4 py-3 border-b">
-    <div class="flex items-center bg-gray-100 rounded-full px-3 py-1.5">
-      <input type="text" placeholder="Search..." 
-             class="bg-transparent border-none focus:outline-none focus:ring-0 w-full">
-      <button type="submit" class="text-gray-500 hover:text-primary">
-        <i class="fas fa-search"></i>
-      </button>
-    </div>
-  </div>
-
-  <!-- Navigation Links -->
-  <nav class="flex flex-col space-y-4 px-4 py-6 text-lg">
-    <a href="landing.php" class="text-primary font-medium">SB Home</a>
-    <a href="about/index.php" class="text-gray-600 hover:text-primary transition-colors">About the Sanggunian</a>
-    <a href="proposed/index.php" class="text-gray-600 hover:text-primary transition-colors">Proposed Ordinance</a>
-  </nav>
-</div>
-
 
     <!-- Carousel Section -->
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
@@ -77,23 +39,23 @@
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://scontent.fmnl17-7.fna.fbcdn.net/v/t39.30808-6/514098782_122158060088537199_2280862184484719632_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3ucOXzb5QIgQ7kNvwEMjFWu&_nc_oc=Adnue-PAhymLLEMuus3CXb5KUZ53xo1RVplvIwuBvgE75ohxasAbGTXxzdE3_-9hmK0&_nc_zt=23&_nc_ht=scontent.fmnl17-7.fna&_nc_gid=C9czznGhjPvqoWPcYw1dtQ&oh=00_AfanKMqpTobvvu2i3tpUI2Y1Hyo9voCjPhXFzxZ---b1zg&oe=68C9E297" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src="assets/img0.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/514002762_122158059980537199_4565664459683296491_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=lPlIB4C9KQcQ7kNvwH9B3ca&_nc_oc=Adkkwr46rZ-eTp95T1RtPYZDexbyVe5yrrbd-G5Pn940hlRUHJkilgmI-A6c2vkniqY&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=WF4uhixccABe5pmGZzHfyA&oh=00_AfaHWTVJQ8_yWIdcNQC1guqQd62_ty9ug6WQ6BInHdI3Qw&oe=68C9EF6B" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src="assets/img1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/515013107_122158188332537199_3912422767005767001_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=U7zxWVSUjhkQ7kNvwEeEd9e&_nc_oc=Adlug8uBlZTeUYnoRWMh_IZxAN2xw3gjwf1dAVH1Rojbmt-Bc0Htp2rGbFgIur9FXmo&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=IxP5NpPJT1G50auuqt5M7Q&oh=00_Afald1QE3i1nSOtci-xS1W06Od4J_hsg73ebUTZrXfT0Og&oe=68C9F038" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src="assets/img2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 4 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/515013107_122158188332537199_3912422767005767001_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=U7zxWVSUjhkQ7kNvwEeEd9e&_nc_oc=Adlug8uBlZTeUYnoRWMh_IZxAN2xw3gjwf1dAVH1Rojbmt-Bc0Htp2rGbFgIur9FXmo&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=IxP5NpPJT1G50auuqt5M7Q&oh=00_Afald1QE3i1nSOtci-xS1W06Od4J_hsg73ebUTZrXfT0Og&oe=68C9F038" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src="assets/img3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 5 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t39.30808-6/515013107_122158188332537199_3912422767005767001_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=U7zxWVSUjhkQ7kNvwEeEd9e&_nc_oc=Adlug8uBlZTeUYnoRWMh_IZxAN2xw3gjwf1dAVH1Rojbmt-Bc0Htp2rGbFgIur9FXmo&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&_nc_gid=IxP5NpPJT1G50auuqt5M7Q&oh=00_Afald1QE3i1nSOtci-xS1W06Od4J_hsg73ebUTZrXfT0Og&oe=68C9F038" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <img src="assets/img1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
         </div>
         <!-- Slider indicators -->
