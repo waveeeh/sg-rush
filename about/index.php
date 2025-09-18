@@ -54,7 +54,7 @@
             </div>
             <div class="flex flex-wrap -m-2">
                 <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                    <a href="../about/index.php" 
+                    <a href="../about/15thSB.php" 
                     class="block h-full flex items-center border-gray-200 border p-3 rounded-lg text-center transition-colors duration-300 
                             bg-white text-gray-600 hover:bg-primary hover:text-white font-medium">
                         <div class="flex-grow">
