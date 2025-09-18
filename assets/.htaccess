@@ -1,0 +1,9 @@
+# /assets/.htaccess
+
+# Disable directory listing
+Options -Indexes
+
+# Extra safety: block access to sensitive files
+<FilesMatch "\.(htaccess|php|ini|log|sh)$">
+    Require all denied
+</FilesMatch>
